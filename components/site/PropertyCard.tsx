@@ -1,0 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
+import type { Property } from "@/data/properties";
+
+export function PropertyCard({property}:{property:Property}) { return <article className="property-card"><Link href={`/properties/${property.id}`} className="property-image"><Image src={property.images[0]} alt="Sample property visual" fill sizes="(max-width: 760px) 100vw, 33vw"/><span className="sample-badge">Sample property</span><span className="property-purpose">For {property.purpose}</span></Link><div className="property-card-body"><p className="property-locality">{property.locality} · {property.city}</p><h3><Link href={`/properties/${property.id}`}>{property.title}</Link></h3><div className="property-meta"><span>{property.bhk ? `${property.bhk} BHK` : property.propertyType}</span><span>{property.area}</span><span>{property.propertyType}</span></div><div className="property-card-foot"><strong>{property.price}</strong><Link href={`/properties/${property.id}`}>View details <span>↗</span></Link></div></div></article>; }

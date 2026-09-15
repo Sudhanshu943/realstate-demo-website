@@ -1,0 +1,1 @@
+export function WhatsAppButton({label="WhatsApp"}:{label?:string}) { return <a className="whatsapp-button" href="https://wa.me/910000000000" aria-label="Open placeholder WhatsApp enquiry"><span>↗</span>{label}</a>; }

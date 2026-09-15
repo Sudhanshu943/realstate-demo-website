@@ -1,0 +1,3 @@
+import Link from "next/link";
+const links=[["Overview","/admin"],["Properties","/admin#properties"],["Projects","/projects"],["Enquiries","/admin#enquiries"],["Leads","/admin/leads"],["Settings","/admin#settings"]];
+export function DashboardSidebar(){return <aside className="dashboard-sidebar"><Link className="admin-brand" href="/"><span>AGS</span><small>Demo Console</small></Link><nav>{links.map(([label,href],i)=><Link key={label} className={i===0?"active":""} href={href}><span>{String(i+1).padStart(2,"0")}</span>{label}</Link>)}</nav><div className="sidebar-foot"><span className="demo-pill">Demo dashboard</span><p>All records are fictional and shown for concept review.</p><Link href="/">← View website</Link></div></aside>}

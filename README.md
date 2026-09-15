@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AGS Realtors & Construction — Concept Demo
 
-## Getting Started
+A premium, responsive real-estate and construction sales concept for Dehradun. The site uses fictional property records, prices, enquiries, leads, and project details. It is a demonstration only and is not an official AGS Realtors website.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production check
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## Demo routes
 
-To learn more about Next.js, take a look at the following resources:
+- `/` — Home and featured sample properties
+- `/properties` — Filterable property discovery
+- `/properties/rajpur-hillside-home` — Sample property detail
+- `/projects` — Demo construction projects
+- `/projects/foothill-residences` — Demo project detail
+- `/about` — Safe placeholder business introduction
+- `/contact` — Demo enquiry journey
+- `/admin` — UI-only property dashboard
+- `/admin/leads` — UI-only CRM pipeline
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- No backend is connected and forms do not transmit data.
+- Placeholder phone, email, address, availability, and business copy must be replaced and approved before official use.
+- Three original generated architectural images are reused across the demo listings and project previews.
