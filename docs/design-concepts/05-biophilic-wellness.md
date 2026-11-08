@@ -1,105 +1,200 @@
-# CONCEPT 05 SPECIFICATION // BIOPHILIC WELLNESS LIVING
-**Document Classification:** Master Concept Design & Architectural Specification  
+# AGS DESIGN LAB // CONCEPT 05 ARCHITECTURAL SPECIFICATION
+# BIOPHILIC WELLNESS LIVING — THE CIRCADIAN & ECOSYSTEM SANCTUARY
+
+**Document Version:** `2.0.0`  
+**Classification:** Master Architectural Design & Engineering Specification  
 **Route:** `/designs/biophilic-wellness`  
-**Target Category:** Ecosystem Architecture, Circadian Rhythms, & Forest Sanctuaries
+**Target Category:** Ecosystem Architecture, Circadian Rhythms, & Low-Density Living  
+**Design Lead:** AGS Realtors & Construction Architectural Lab  
 
 ---
 
 ## 1. STRATEGIC POSITIONING & AUDIENCE PSYCHOLOGY
 
-### 1.1 Target Buyer Personas
-- **The Health & Wellness Advocate:** Doctors, wellness entrepreneurs, and longevity seekers who understand the biological impact of air quality, circadian light, non-toxic materials, and natural soundscapes.
-- **The Low-Density Forest Buyer:** Families seeking an antidote to crowded, noisy city apartments. They prioritize protected tree canopies, organic vegetable gardens, and private walking trails.
-- **The Eco-Conscious Executive:** Demands zero-VOC finishes, solar passive heating, mineral spring water, and native biodiversity preservation.
+### 1.1 The High-Net-Worth Persona Matrix
+The Biophilic Wellness concept is engineered for buyers who view health, mental restoration, and environmental purity as the ultimate luxury:
 
-### 1.2 Core Emotional Proposition
-> *"A home that restores your biological health. Wake to mountain mist, breathe air filtered by centuries-old Sal trees, and live in harmony with natural solar cycles."*
+1. **The Longevity & Preventative Health Seeker:**
+   - *Profile:* Ultra-high-net-worth individuals, doctors, and tech founders who track sleep cycles, HRV (heart rate variability), and air quality index (AQI).
+   - *Psychological Drivers:* Seeks an escape from urban particulate matter (PM 2.5), artificial blue light, and chemical off-gassing.
+   - *Expectations:* Natural cross-ventilation, zero-VOC lime finishes, circadian lighting integration, mature tree canopy buffers, and natural spring water.
+   - *Dealbreakers:* High-density gated towers, artificial turf, synthetic PVC finishes, or properties adjacent to highway pollution corridors.
 
-The website avoids synthetic corporate aesthetics, embracing **organic textures, soft earth tones, and biological metrics**.
+2. **The Nature Conservationist & Organic Living Family:**
+   - *Profile:* Families desiring an organic lifestyle with private kitchen gardens, fruit orchards, bird habitats, and nature walking trails for their children.
 
----
+3. **The Holistic Wellness / Yoga & Meditation Practitioner:**
+   - *Profile:* Demands peaceful morning sunlight, tranquil water acoustics, and private open-air meditation pavilions.
 
-## 2. LUXURY COLOR CHEMISTRY & MATERIAL PALETTE
+### 1.2 Core Emotional Thesis
+> *"A home that restores your biological health. Wake to mountain mist, breathe air filtered by centuries-old Sal forests, and live in harmony with natural solar cycles."*
 
-### 2.1 Color Matrix (Forest Sanctuary)
-- **Organic Raw Linen (`#F3EFE4`):** Soft, soothing, unbleached cotton-linen canvas.
-- **Deep Himalayan Moss Green (`#244236`):** Primary brand tone; deep, rich, oxygenated chlorophyll.
-- **Sun-Baked Terracotta (`#B46D4D`):** Warm clay pottery, brick planters, and outdoor hearths.
-- **Meadow Sunlight Gold (`#D4AF37`):** Warm morning sunbeams and active accents.
-- **River Stone Gray (`#8A9A86`):** Smooth river pebbles, limestone paths, and muted labels.
-- **Text:** Dark Forest Charcoal (`#1B2E26`) for gentle, fatigue-free reading.
-
-### 2.2 Rejection of Synthetic Digital Visuals
-- Rounded, organic card borders (`12px` to `16px`).
-- Natural leaf, botanical, and water wave iconography.
-- Zero harsh artificial grays or electric neons.
+The architecture is designed as a **biological restorative instrument**. Spaces are proportioned to harmonize with circadian hormonal rhythms.
 
 ---
 
-## 3. TYPOGRAPHY & EDITORIAL VOICE
+## 2. LUXURY COLOR CHEMISTRY & MATERIAL TAXONOMY
 
-### 3.1 Type Hierarchy
-- **Display Headings:** `Humanist Editorial Serif` (e.g. `Fraunces` or `Cormorant Garamond` with soft curves).
-  - Size: `clamp(2.4rem, 5vw, 4.4rem)`
-  - Line-height: `1.1`
-- **Body & Botanical Names:** `Rounded Sans-Serif` (e.g. `Plus Jakarta Sans` or `Manrope`).
-  - Size: `1.0rem`
-  - Line-height: `1.7`
-- **Ecological Metrics:** Compact tabular figures paired with Latin botanical nomenclature in italics (`Shorea robusta`).
+### 2.1 Color Science: The Organic Raw Linen & Deep Moss Palette
+```css
+:root {
+  /* Natural Ground & Organic Linen Surfaces */
+  --c05-bg-canvas: #F3EFE4;          /* Raw Unbleached Cotton Linen */
+  --c05-bg-surface: #FAF7F0;         /* Soft Sand Plaster */
+  --c05-bg-subtle: #EAE4D5;          /* Muted River Silt */
 
----
+  /* Deep Forest & Chlorophyll Inks */
+  --c05-text-moss: #244236;          /* Deep Himalayan Moss Green */
+  --c05-text-charcoal: #182C24;      /* High-Contrast Forest Charcoal */
+  --c05-text-muted: #6B7C72;         /* Pine Needle Greige */
 
-## 4. DETAILED SECTION-BY-SECTION BLUEPRINT
+  /* Biological Earth Accents */
+  --c05-accent-terracotta: #B46D4D;  /* Sun-Baked Terracotta Pottery */
+  --c05-accent-gold: #D4AF37;        /* Golden Meadow Sunbeam */
+  --c05-accent-mist: #78998C;        /* Morning Alpine Mist Blue */
 
-### Section 1: Ecological Telemetry Bar
-- Real-time valley environmental sensors:
-  - `BASIN AIR QUALITY: AQI 22 · ALPINE PURE (ZERO PARTICULATE POLLUTION)`
-  - `SAL FOREST CANOPY BUFFER: 78% PROTECTED TREE COVER`
-  - `SPRING AQUIFER PURITY: TDS 84 PPM · MINERAL MOUNTAIN WATER`
-  - `SOLAR DIURNAL INDEX: 8.4 HRS HEALING UV SPECTRUM`
-
-### Section 2: Botanical Search & Proximity Ribbon
-- Filters properties by biological criteria:
-  - *Forest Buffer:* Direct Sal Reserve Edge, Pine Ridge Crest, Orchard Buffer.
-  - *Aquifer / Water Source:* Gravity-Fed Mountain Spring, Rainwater Cistern.
-  - *Outdoor Living Space:* Private 1,500+ sq ft Garden, Stepped Terraces, Central Green Courtyard.
-  - *Living Purpose:* Buy Sanctuary vs. Long-Term Wellness Lease.
-
-### Section 3: Signature Feature — 4-Phase Circadian Daylight & Atmosphere Simulator
-- **The Concept:** Modern indoor living disrupts melatonin and sleep cycles. These homes are engineered to maximize natural daylighting throughout the 24-hour cycle.
-- **Interactive Circadian Phase Selector:**
-  1. **Phase 01 · Dawn Mist (06:15 AM · 4,500K · 14°C):** Visualizes crisp morning light filtering through east-facing bedroom balconies. Promotes natural cortisol awakening.
-  2. **Phase 02 · Canopy Shade (12:30 PM · 5,500K · 4.2°C ambient cooling):** Shows how the dense Sal forest canopy blocks scorching overhead UV while admitting indirect diffuse light into living spaces.
-  3. **Phase 03 · Golden Ridge (05:45 PM · 2,700K · 20°C):** Warm amber sunset light washing across west-facing verandahs. Signals the body to initiate natural wind-down.
-  4. **Phase 04 · Starlight Night (09:00 PM · 1,800K · Dark Sky):** Demonstrates shielded low-kelvin warm lighting that preserves natural darkness for deep restorative sleep.
-- **Dynamic Telemetry Box:** Updates temperature differentials, color temperature (Kelvin), and air purity in real time.
-
-### Section 4: Sanctuary Residences Catalogue (3-Column Grid)
-- 6 forest-framed properties with high-res photography.
-- Highlights:
-  - `🌿 100% Cross-Ventilated Corridors`
-  - `☀️ Southern Solar Arc Alignment`
-  - `💧 Subterranean Rainwater Cistern`
-  - `🪵 VOC-Free Local Himalayan Cedar Joinery`
-
-### Section 5: Native Himalayan Flora & Canopy Ledger (4-Column Grid)
-- Detailed botanical guide explaining the ecological benefits of native plants integrated into every estate:
-  - **Shorea Robusta (Sal Tree):** Ancient canopy tree providing dense summer shade and acoustic dampening.
-  - **Cedrus Deodara (Himalayan Cedar):** Natural phytoncide emissions proven to lower heart rate and reduce stress.
-  - **Jasminum Humile (Yellow Jasmine):** Natural evening fragrance planted outside bedroom casements.
-  - **Cymbopogon (Wild Lemongrass):** Non-chemical organic insect deterrent planted along terrace borders.
-
-### Section 6: The 4 Biophilic Living Pillars
-1. **Air Purity by Design:** Cross-ventilation shafts harness natural valley diurnal breezes.
-2. **Non-Toxic Earth Palette:** Hand-cut quartzite, lime-wash, and VOC-free finishes.
-3. **Subterranean Spring Purity:** Natural sand-bed filtration and zero chemical chlorination.
-4. **Circadian Alignment:** Fenestration sized to maintain the body's natural 24-hour hormonal cycle.
-
-### Section 7: Morning Mist Walk Reservation Form
-- Form enabling prospective buyers to reserve an accompanied morning walking tour (07:00 AM – 09:30 AM) led by a resident naturalist.
+  /* Soft Organic Borders & Radii */
+  --c05-border-organic: rgba(36, 66, 54, 0.12);
+  --c05-border-terracotta: rgba(180, 109, 77, 0.35);
+  --c05-radius-card: 16px;           /* Gentle, Non-Aggressive Rounded Corners */
+}
+```
 
 ---
 
-## 5. DEVELOPER & CLIENT PRESENTATION SCRIPT
+## 3. TYPOGRAPHY SYSTEM & EDITORIAL CADENCE
+
+### 3.1 Type Pairing Architecture
+- **Display Headings:** `Humanist Editorial Serif` (`Fraunces` or `Cormorant Garamond`).
+  - *Character:* Warm, curved, organic, restorative.
+  - *Scale:* `clamp(2.4rem, 5vw, 4.4rem)` | `line-height: 1.1` | `letter-spacing: -0.02em`.
+- **Interface & Botanical Typography:** `Rounded Humanist Sans` (`Plus Jakarta Sans` / `Manrope`).
+  - *Scale:* `0.95rem` to `1.05rem` | `line-height: 1.7`.
+- **Botanical Latin Nomenclature:** `Italicized Serif` (`Shorea robusta`, `Cedrus deodara`).
+
+---
+
+## 4. DETAILED COMPONENT & SECTION WIREFRAMES
+
+```
++--------------------------------------------------------------------------------------------------+
+| ECOLOGICAL TELEMETRY:  AQI: 22 ALPINE PURE | 78% CANOPY COVER | TDS 84 PPM SPRING WATER | 8.4H SUN|
++--------------------------------------------------------------------------------------------------+
+| BRAND NAVBAR:   [ Leaf Icon ]  AGS BIOPHILIC RESIDENCES     Circadian Simulator  Sanctuaries  Walk|
++--------------------------------------------------------------------------------------------------+
+| BOTANICAL PROXIMITY SEARCH RIBBON:                                                               |
+|   [ Forest Buffer: Sal Reserve Edge v ] [ Water Source: Mountain Spring v ] [ Garden: 1,500+ sqft]|
++--------------------------------------------------------------------------------------------------+
+| SIGNATURE INTERACTIVE: THE 4-PHASE CIRCADIAN DAYLIGHT & ATMOSPHERE SIMULATOR                     |
+|                                                                                                  |
+|   PHASE SELECTOR TABS:                                                                           |
+|   [ 01 Dawn Mist 06:15 AM ] [ 02 Canopy Shade 12:30 PM ] [ 03 Golden Ridge 05:45 PM ] [ Starlight]|
+|                                                                                                  |
+|   +--------------------------------------------------------------------------------------------+ |
+|   |  SIMULATOR VIEWPORT CANVAS (Dynamic Daylight Lighting Shift):                              | |
+|   |  [ Gradient shifts from Morning Dawn Rose-Gold to Midday Canopy Green to Golden Amber ]   | |
+|   |  Readout: KELVIN: 4,500K  |  TEMP: 14°C CRISP  |  HORMONE TRIGGER: NATURAL CORTISOL WAKE   | |
+|   |  "East-facing bedroom verandahs capture low-angle blue wavelengths that reset melatonin."   | |
+|   +--------------------------------------------------------------------------------------------+ |
++--------------------------------------------------------------------------------------------------+
+| SANCTUARY PROPERTY CATALOGUE (3-Column Grid):                                                    |
+|   [ Sanctuary 01: Malsi Canopy Villa ]  [ Sanctuary 02: Sal Orchard Duplex ]  [ Sanctuary 03 ]   |
+|   High-Res Photography                  High-Res Photography                  High-Res Photo     |
+|   🌿 100% Cross-Ventilated              🌿 100% Cross-Ventilated              🌿 100% Ventilated |
+|   ☀️ Southern Daylight Arc              ☀️ Southern Daylight Arc              ☀️ Daylight Arc    |
+|   💧 Spring Cistern                    💧 Spring Cistern                    💧 Spring Cistern  |
++--------------------------------------------------------------------------------------------------+
+| NATIVE HIMALAYAN FLORA & CANOPY LEDGER (4-Column Grid):                                          |
+|   [ Shorea Robusta (Sal) ]  [ Cedrus Deodara (Cedar) ]  [ Jasminum Humile ]  [ Cymbopogon ]      |
+|   Thermal Canopy Buffer     Acoustic Phytoncides       Fragrance Scent Path  Organic Pest Guard  |
++--------------------------------------------------------------------------------------------------+
+| THE 4 BIOPHILIC LIVING PILLARS (4-Column Grid):                                                  |
+|   [ 01 Air Purity ] [ 02 Non-Toxic Earth ] [ 03 Subterranean Spring ] [ 04 Circadian Alignment ]|
++--------------------------------------------------------------------------------------------------+
+| MORNING MIST WALK RESERVATION FORM:                                                              |
+|   [ Guest Name ] [ Mobile Number ] [ Preferred Morning (07:00 AM) ] [ Reserve Guided Walk → ]    |
++--------------------------------------------------------------------------------------------------+
+```
+
+---
+
+## 5. SIGNATURE INTERACTIVE FEATURE: 4-PHASE CIRCADIAN SIMULATOR
+
+### 5.1 Circadian Science & Atmospheric Logic
+The 4-Phase Simulator demonstrates how the residence interacts with the sun throughout the day:
+
+```typescript
+export interface CircadianPhase {
+  id: "dawn" | "midday" | "sunset" | "night";
+  timeLabel: string;
+  colorTempKelvin: number;
+  temperatureCelsius: number;
+  aqiValue: number;
+  biologicalEffect: string;
+  architecturalAction: string;
+  gradientBackground: string;
+}
+
+export const circadianPhases: Record<string, CircadianPhase> = {
+  dawn: {
+    id: "dawn",
+    timeLabel: "06:15 AM · Dawn Mist",
+    colorTempKelvin: 4500,
+    temperatureCelsius: 14.2,
+    aqiValue: 20,
+    biologicalEffect: "Cortisol elevation; natural wakeful alertness without alarms.",
+    architecturalAction: "Low-angle east casements channel morning sunlight into master suites.",
+    gradientBackground: "linear-gradient(135deg, #FFF1EB 0%, #ACE0F9 100%)"
+  },
+  midday: {
+    id: "midday",
+    timeLabel: "12:30 PM · Canopy Shade",
+    colorTempKelvin: 5500,
+    temperatureCelsius: 24.8,
+    aqiValue: 26,
+    biologicalEffect: "High alertness; 4.2°C cooler microclimate beneath Sal trees.",
+    architecturalAction: "Deep 1.8m eaves block harsh vertical solar angles, keeping interiors naturally cool.",
+    gradientBackground: "linear-gradient(135deg, #D4FC79 0%, #96E6A1 100%)"
+  },
+  sunset: {
+    id: "sunset",
+    timeLabel: "05:45 PM · Golden Ridge",
+    colorTempKelvin: 2700,
+    temperatureCelsius: 19.5,
+    aqiValue: 22,
+    biologicalEffect: "Melatonin secretion begins; reduction of ocular stress.",
+    architecturalAction: "West verandahs washed in warm 2,700K amber glow as sun sets over hills.",
+    gradientBackground: "linear-gradient(135deg, #FA709A 0%, #FEE140 100%)"
+  },
+  night: {
+    id: "night",
+    timeLabel: "09:00 PM · Starlight Night",
+    colorTempKelvin: 1800,
+    temperatureCelsius: 12.8,
+    aqiValue: 16,
+    biologicalEffect: "Deep restorative slow-wave sleep; zero artificial light pollution.",
+    architecturalAction: "Shielded, downward-directed amber lighting preserves IDA Dark Sky status.",
+    gradientBackground: "linear-gradient(135deg, #182C24 0%, #0D1612 100%)"
+  }
+};
+```
+
+---
+
+## 6. NATIVE HIMALAYAN FLORA LEDGER
+
+1. **Shorea Robusta (Sal Tree):**
+   - High-density deciduous canopy that acts as a natural acoustic buffer against distant city noise.
+2. **Cedrus Deodara (Himalayan Cedar):**
+   - Emits natural phytoncides (airborne antimicrobial compounds) clinically proven to lower blood pressure and cortisol.
+3. **Jasminum Humile (Yellow Himalayan Jasmine):**
+   - Planted directly beneath bedroom windows to release gentle, natural essential fragrances during early evening hours.
+4. **Cymbopogon (Wild Lemongrass):**
+   - Organic pest deterrent that repels mosquitoes naturally along outdoor dining decks.
+
+---
+
+## 7. DEVELOPER & CLIENT PRESENTATION SCRIPT
 When pitching this concept:
-> *"Post-2020, wellness is the ultimate luxury. Buyers will pay a massive premium to know their children are breathing AQI 22 air, drinking pure spring water, and living in homes that actively improve their physical and mental wellbeing. This website positions your project as the premier wellness sanctuary in North India."*
+
+> *"In today's post-pandemic world, health is the single most valuable asset. Buyers are running away from polluted cities. By proving that your development actively improves sleep, filters air naturally, and provides pure spring water, you elevate your homes into life-extending sanctuaries. This is the future of luxury living."*

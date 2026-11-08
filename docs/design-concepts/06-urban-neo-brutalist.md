@@ -1,100 +1,191 @@
-# CONCEPT 06 SPECIFICATION // URBAN NEO-BRUTALIST (MONOLITHIC MATERIALITY)
-**Document Classification:** Master Concept Design & Architectural Specification  
+# AGS DESIGN LAB // CONCEPT 06 ARCHITECTURAL SPECIFICATION
+# URBAN NEO-BRUTALIST (MONOLITHIC MATERIALITY) — THE CONCRETE & TECTONIC SHOWCASE
+
+**Document Version:** `2.0.0`  
+**Classification:** Master Architectural Design & Engineering Specification  
 **Route:** `/designs/urban-neo-brutalist`  
-**Target Category:** Monolithic Concrete Architecture, Honed Stone, & Tectonic Materiality
+**Target Category:** Monolithic Concrete Architecture, Honed Stone, & Tectonic Permanence  
+**Design Lead:** AGS Realtors & Construction Architectural Lab  
 
 ---
 
-## 1. CRITICAL DESIGN OVERHAUL & PALETTE RESOLUTION
+## 1. CRITICAL DESIGN OVERHAUL: RESOLVING THE "HARSH BLACK" CRITIQUE
 
-### 1.1 The User Critique: Why the Old "Black & Yellow" Failed
+### 1.1 The User Critique & Root Cause Analysis
 *User Feedback:* "Some designs look very bad for that black color. I don't think the real estate website should look like a dark mode. If it will be in dark mode, how it should look like? A professional client can see it and say it is a great website and he wants to buy that website."
 
-In early iterations, Neo-Brutalist websites borrowed from cyber-punk and software developer themes: flat `#050505` black backgrounds, harsh `#F2FF3D` electric yellow buttons, and abrasive contrast. This caused:
-1. **Developer Terminal Confusion:** Clients thought it looked like an IDE or crypto exchange rather than a luxury real estate portal.
-2. **Loss of High-End Warmth:** UHNW buyers perceived it as cold, aggressive, and cheap.
+#### Why the Previous Iteration Failed:
+- The previous design used flat `#050505` black backgrounds paired with high-saturation `#F2FF3D` electric yellow buttons.
+- While common in web developer tools and crypto platforms, this created a **cyber-punk or hacker console aesthetic** that completely alienated luxury real estate buyers.
+- Ultra-high-net-worth clients perceived it as aggressive, cheap, and disconnected from physical architecture.
 
-### 1.2 The Architectural Transformation: Monolithic Tectonics
-We transform Concept 06 from a digital "hacker dark mode" into **Architectural Monolithism**, celebrating the tactile grandeur of masters like **Tadao Ando, Le Corbusier, and Peter Zumthor**.
-Instead of flat pitch black, the primary palette is built around **silky board-formed fair-face concrete, warm basalt stone, honed brass, and cast river terrazzo**.
-
----
-
-## 2. LUXURY COLOR CHEMISTRY & MATERIAL PALETTE
-
-### 2.1 The New Monolithic Palette
-- **Board-Formed Concrete Canvas (`#E8E6E1` or `#ECEAE5`):** Warm architectural gray reminiscent of silky, polished fair-face concrete with natural stone aggregates.
-- **Deep Basalt Stone (`#1F2124`):** Rich volcanic stone used for structural text, borders, and monolithic contrast blocks. Replaces harsh `#000000`.
-- **Corten Steel / International Terracotta (`#D95338`):** Weathered architectural steel and warm baked clay accents. Replaces electric neon yellow.
-- **Honed Architectural Brass (`#B89658`):** Luxury metallic detailing for door pulls, signage, and VIP triggers.
-- **Cast Terrazzo Cream (`#F6F5F2`):** Smooth card backgrounds with visible river-pebble speckles and crisp `1.5px` basalt borders.
+### 1.2 The Master Architectural Solution: Monolithic Tectonics
+We completely transform Concept 06 into **Monolithic Architectural Brutalism**, drawing direct inspiration from the timeless masterpieces of **Tadao Ando, Le Corbusier, and Peter Zumthor**:
+- The flat black background is replaced with **Warm Board-Formed Fair-Face Concrete Gray (`#E8E6E1` / `#ECEAE5`)** with subtle stone textures.
+- The electric yellow is replaced with **Corten Steel / International Terracotta (`#D95338`)** and **Honed Architectural Brass (`#B89658`)**.
+- The cards celebrate **Cast River-Pebble Terrazzo (`#F6F5F2`)** and **Honed Basalt Stone (`#1F2124`)**.
 
 ---
 
-## 3. TYPOGRAPHY & UI HIERARCHY
+## 2. LUXURY COLOR CHEMISTRY & MATERIAL TAXONOMY
 
-### 3.1 Type Hierarchy
+### 2.1 The New Monolithic Materiality Palette
+```css
+:root {
+  /* Concrete & Stone Canvases */
+  --c06-bg-concrete: #E8E6E1;         /* Silky Board-Formed Fair-Face Concrete */
+  --c06-bg-surface: #F6F5F2;          /* Cast River-Pebble Terrazzo Cream */
+  --c06-bg-subtle: #DFDDD8;           /* Troweled Architectural Plaster */
+
+  /* Monolithic Contrast & Basalt Inks */
+  --c06-text-basalt: #1F2124;         /* Honed Volcanic Basalt Stone (Replaces #000000) */
+  --c06-text-muted: #5C6066;          /* Aggregate Matrix Gray */
+  --c06-text-faint: #8F949B;          /* Dimensional Annotation Slate */
+
+  /* Structural Metal Accents (3-5% Max) */
+  --c06-accent-corten: #D95338;       /* Weathered Corten Steel / Baked Clay */
+  --c06-accent-brass: #B89658;        /* Honed Architectural Joinery Brass */
+  --c06-accent-rebar: #3B82F6;        /* Structural Engineering Blue */
+
+  /* Heavyweight Tectonic Borders */
+  --c06-border-heavy: 2px solid #1F2124;
+  --c06-border-medium: 1.5px solid rgba(31, 33, 36, 0.25);
+  --c06-border-corten: 2px solid #D95338;
+
+  /* Hard Monolithic Box Shadows */
+  --c06-shadow-monolith: 6px 6px 0px #1F2124;
+}
+```
+
+### 2.2 Material Authenticity & Finishes
+1. **C35/45 Fair-Face Concrete:** Cast using local pine shuttering, leaving a smooth, tactile wood-grain relief that ages with a natural grey-patina over decades.
+2. **Fe 550D TMT Rebar:** High-ductility steel rebar engineered to resist Himalayan seismic forces.
+3. **32mm Acoustic Low-E Glazing:** 42dB acoustic isolation, keeping interiors tranquil amidst busy urban streets.
+4. **Cast Terrazzo Flooring:** Composed of white Portland cement and crushed local riverbed quartzite aggregate.
+
+---
+
+## 3. TYPOGRAPHY SYSTEM & EDITORIAL CADENCE
+
+### 3.1 Type Pairing Architecture
 - **Primary Display Headings:** `Neue Haas Grotesk Bold / Helvetica Now Black`.
-  - Size: `clamp(2.6rem, 5.5vw, 4.8rem)`
-  - Tracking: `-0.03em`
-  - Transform: `Uppercase / Sentence Case`
-- **Tectonic Subtitles & Material Callouts:** `Heavy Monospace` (`0.75rem`, `letter-spacing: 0.12em`).
-- **Body Copy:** `Inter` or `Neue Haas Grotesk Regular` (`0.95rem`, `line-height: 1.6`).
+  - *Character:* Heavyweight, architectural, uncompromising, permanent.
+  - *Scale:* `clamp(2.6rem, 5.5vw, 4.8rem)` | `font-weight: 800` | `letter-spacing: -0.03em`.
+- **Tectonic Annotations & Subtitles:** `Heavyweight Monospace` (`JetBrains Mono` / `SF Mono`).
+  - *Scale:* `0.75rem` | `font-weight: 700` | `letter-spacing: 0.12em` | `text-transform: uppercase`.
+- **Body Text:** `Inter` or `Neue Haas Grotesk Regular`.
+  - *Scale:* `0.95rem` | `line-height: 1.65` | `color: #1F2124`.
 
 ---
 
-## 4. DETAILED SECTION-BY-SECTION BLUEPRINT
+## 4. DETAILED COMPONENT & SECTION WIREFRAMES
 
-### Section 1: Monolithic Materiality Ticker
-- Industrial headline ticker:
-  - `FAIR-FACE CONCRETE SPECIFICATION // C35/45 COMPRESSIVE STRENGTH`
-  - `FE 550D TMT MOMENT CORE // EARTHQUAKE RESILIENT`
-  - `32MM ACOUSTIC LOW-E GLAZING // 42DB STREET NOISE ATTENUATION`
-  - `ZERO MAINTENANCE MONOLITHIC SHELL // 100-YEAR LIFESPAN`
-
-### Section 2: Monolithic Brand Navigation
-- Logo: Bold geometric concrete block icon with `AGS MONOLITHIC ARCHITECTURE · DEHRADUN`.
-- Links: `Material Inspector`, `Raw Inventory`, `Tectonic Manifesto`, `Direct Acquisition`.
-- Action: `Dispatch Acquisition Brief →` (Basalt button with Corten outline).
-
-### Section 3: The Architectural Monolith Hero Stage
-- Massive, confident typography:
-  - Kicker: `HEAVYWEIGHT ARCHITECTURE · ZERO SUPERFICIAL ORNAMENT`
-  - Headline: `Raw Concrete. Honed Stone. Permanent Shelter.`
-  - Subhead: `Residences designed with the structural clarity of modern brutalism. Exposed fair-face concrete walls, floor-to-ceiling glass pavilions, and cast-in-situ river terrazzo floors.`
-- Command Search Ribbon:
-  - *Structural Material:* Board-Formed Concrete, Honed Basalt, Exposed Steel.
-  - *Spatial Volume:* Double-Height Loft, Cantilevered Duplex, Monolithic Villa.
-  - *Corridor:* Central Urban Dehradun, Rajpur Foothills, Canal Road.
-
-### Section 4: Signature Interactive Feature — The Material Tectonics Inspector
-- **The Concept:** Highlighting the authentic physical substances used in the building's construction.
-- **Interactive Material Selectors:**
-  1. **C35/45 Self-Compacting Fair-Face Concrete:** Formed with local pine timber shuttering, leaving a smooth, tactile wood-grain imprint on interior and exterior walls.
-  2. **Fe 550D TMT Seismic Rebar:** High-ductility structural reinforcement engineered to absorb and dissipate Himalayan seismic ground accelerations.
-  3. **32mm Double-Glazed Acoustic Envelope:** Argon-filled insulated glazing units providing total acoustic isolation from traffic and weather.
-  4. **Cast-in-situ Terrazzo Flooring:** Hand-ground flooring composed of white cement and crushed local riverbed quartzite aggregate.
-- **Real-Time Material Physics Card:** Clicking any material reveals its compressive strength, thermal mass factor, acoustic damping, and maintenance lifespan (100+ years).
-
-### Section 5: Raw Urban Inventory Catalogue (3-Column Grid)
-- Monolithic property cards with heavy `2px` basalt borders.
-- Properties:
-  - *The Monolith Loft (Rajpur Road)* — ₹1.85 Cr · 3 BHK Double Height.
-  - *The Concrete Cantilever (Mussoorie Bypass)* — ₹2.40 Cr · 4 BHK Overhang.
-  - *Basalt River Villa (Old Rajpur)* — ₹3.10 Cr · 4 BHK Courtyard.
-- Features: Detailed structural specifications, floor load capacities, and direct `Acquire Property Dossier` triggers.
-
-### Section 6: The 4 Monolithic Tenets
-1. **Zero Fake Cladding:** No synthetic ACP sheets, no false ceilings, no fake brick veneers. What you see is what carries the load.
-2. **Structural Legibility:** The structural skeleton of columns, beams, and slabs is celebrated as the primary interior design element.
-3. **Thermal Mass Inertia:** Heavy concrete and stone walls dampen diurnal temperature swings, staying naturally cool during summer and warm in winter.
-4. **Permanent Longevity:** Low-maintenance materials that age with dignity and develop a rich natural patina over decades.
-
-### Section 7: Direct Acquisition Dispatch Form
-- Streamlined, high-authority acquisition form for decisive buyers and investors.
+```
++--------------------------------------------------------------------------------------------------+
+| TECTONIC TICKER:  FAIR-FACE CONCRETE: C35/45 | FE 550D REBAR | 32MM ACOUSTIC GLASS | ZERO CLADDING|
++--------------------------------------------------------------------------------------------------+
+| MONOLITHIC NAVBAR: [ Square Monolith Icon ] AGS MONOLITHIC ARCHITECTURE    Materials  Units  Brief|
++--------------------------------------------------------------------------------------------------+
+| HERO STAGE (Architectural Monolith):                                                             |
+|   Kicker: HEAVYWEIGHT ARCHITECTURE · ZERO SUPERFICIAL ORNAMENT                                   |
+|   Headline: "RAW CONCRETE. HONED STONE. PERMANENT SHELTER."                                      |
+|   Subhead: Residences designed with the structural clarity of modern brutalism. Exposed fair-    |
+|            face concrete walls, floor-to-ceiling glass pavilions, and cast terrazzo floors.      |
+|                                                                                                  |
+|   +--------------------------------------------------------------------------------------------+ |
+|   | COMMAND SEARCH RIBBON: [ Material: Concrete v ] [ Volume: Loft v ] [ Locate Residences → ] | |
+|   +--------------------------------------------------------------------------------------------+ |
++--------------------------------------------------------------------------------------------------+
+| SIGNATURE INTERACTIVE: THE MATERIAL TECTONICS INSPECTOR                                          |
+|                                                                                                  |
+|   MATERIAL SELECTOR TABS:                                                                        |
+|   [ 01 C35/45 Concrete ] [ 02 Fe 550D Rebar ] [ 03 32mm Glazing ] [ 04 Cast Terrazzo ]           |
+|                                                                                                  |
+|   +--------------------------------------------------------------------------------------------+ |
+|   |  MATERIAL PHYSICS VIEWPORT:                                                                | |
+|   |  [ High-Res Macro Photography of Board-Formed Fair-Face Concrete Texture ]                 | |
+|   |  Readout: COMPRESSIVE STRENGTH: 45 N/mm²  |  THERMAL INERTIA: 8.5 HRS  |  LIFESPAN: 100+ YRS| |
+|   |  "Formed using local pine shuttering, leaving a tactile wood-grain imprint on walls."      | |
+|   +--------------------------------------------------------------------------------------------+ |
++--------------------------------------------------------------------------------------------------+
+| RAW URBAN INVENTORY CATALOGUE (3-Column Heavyweight Grid):                                       |
+|   [ The Monolith Loft ]           [ The Concrete Cantilever ]     [ Basalt River Villa ]         |
+|   ₹1.85 Cr · 3 BHK Double Height  ₹2.40 Cr · 4 BHK Overhang       ₹3.10 Cr · 4 BHK Courtyard     |
+|   C35 Concrete + 32mm Glass       Fe 550D Rebar + Terrazzo        Basalt Stone + Cedar           |
+|   [ Acquire Property Dossier → ]  [ Acquire Property Dossier → ]  [ Acquire Dossier → ]          |
++--------------------------------------------------------------------------------------------------+
+| THE 4 MONOLITHIC TENETS (4-Column Grid):                                                         |
+|   [ 01 Zero Cladding ] [ 02 Structural Legibility ] [ 03 Thermal Mass ] [ 04 Permanent Longevity] |
++--------------------------------------------------------------------------------------------------+
+| DIRECT ACQUISITION DISPATCH FORM:                                                                |
+|   [ Purchaser / Fund Name ] [ Mobile Number ] [ Target Corridor ] [ Dispatch Acquisition Brief →]|
++--------------------------------------------------------------------------------------------------+
+```
 
 ---
 
-## 5. DEVELOPER & CLIENT PRESENTATION SCRIPT
+## 5. SIGNATURE INTERACTIVE FEATURE: MATERIAL TECTONICS INSPECTOR
+
+### 5.1 Interactive Material Physics Data
+```typescript
+export interface MaterialTectonicSpec {
+  id: "concrete" | "rebar" | "glazing" | "terrazzo";
+  name: string;
+  industryCode: string;
+  compressiveOrTensileStrength: string;
+  thermalAcousticMetric: string;
+  provenance: string;
+  architecturalBenefit: string;
+  macroPhotoUrl: string;
+}
+
+export const materialSpecs: Record<string, MaterialTectonicSpec> = {
+  concrete: {
+    id: "concrete",
+    name: "Board-Formed Fair-Face Concrete",
+    industryCode: "IS 456:2000 Grade C35/45",
+    compressiveOrTensileStrength: "45 N/mm² (High-Early Strength)",
+    thermalAcousticMetric: "Thermal Damping: 8.5 Hour Phase Lag",
+    provenance: "Cast on-site with local Dehradun pine timber formwork",
+    architecturalBenefit: "Zero maintenance required. Does not require paint or plaster for its 100-year design life.",
+    macroPhotoUrl: "/images/residence.png"
+  },
+  rebar: {
+    id: "rebar",
+    name: "Fe 550D High-Ductility TMT Rebar",
+    industryCode: "IS 1786:2008 Grade Fe 550D",
+    compressiveOrTensileStrength: "Tensile Strength: 585 N/mm²",
+    thermalAcousticMetric: "Elongation: 14.5% (Seismic Energy Dissipation)",
+    provenance: "Primary integrated steel mill with low carbon footprint",
+    architecturalBenefit: "Absorbs seismic ground accelerations without brittle fractures.",
+    macroPhotoUrl: "/images/hero-dehradun.png"
+  },
+  glazing: {
+    id: "glazing",
+    name: "32mm Acoustic Low-E Insulated Glazing",
+    industryCode: "EN 1279 Certified Dual-Seal IGU",
+    compressiveOrTensileStrength: "Wind Load Resistance: 2.4 kPa",
+    thermalAcousticMetric: "Sound Reduction: 42 dB RW | U-Value: 0.32 W/m²K",
+    provenance: "Argon gas-filled with soft-coat solar control silver layer",
+    architecturalBenefit: "Total acoustic silence indoors even on busy urban avenues.",
+    macroPhotoUrl: "/images/villa.png"
+  },
+  terrazzo: {
+    id: "terrazzo",
+    name: "Cast-In-Situ Himalayan River Terrazzo",
+    industryCode: "Polished Mineral Composite",
+    compressiveOrTensileStrength: "Mohs Hardness: 6.5 (Scratch Proof)",
+    thermalAcousticMetric: "High Thermal Storage for Radiant Floor Heating",
+    provenance: "Crushed local quartzite pebbles bound with white Portland cement",
+    architecturalBenefit: "Seamless joint-free flooring that stays cool to the touch throughout summer.",
+    macroPhotoUrl: "/images/hero-dehradun.png"
+  }
+};
+```
+
+---
+
+## 6. DEVELOPER & CLIENT PRESENTATION SCRIPT
 When pitching this concept:
-> *"Notice how this is not a dark gamer website. It looks like an architectural monograph for a concrete villa designed by Tadao Ando. It communicates strength, permanence, and modern European sophistication. For buyers tired of cookie-cutter builder apartments, this is an irresistible statement of structural confidence."*
+
+> *"Look at how the website feels now. This is not a dark gamer website. It looks like an architectural monograph for a concrete masterpiece designed by Tadao Ando or Le Corbusier. It exudes physical strength, permanence, and modern sophistication. For discerning buyers who are sick of cheap builder apartments with fake wallpaper, this is an undeniable statement of architectural integrity."*
