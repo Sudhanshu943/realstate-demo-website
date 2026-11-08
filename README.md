@@ -29,6 +29,17 @@ npm start
 - `/contact` — Demo enquiry journey
 - `/admin` — UI-only property dashboard
 - `/admin/leads` — UI-only CRM pipeline
+- `/designs` — Gallery for all ten researched visual directions
+- `/designs/monochrome-editorial` — Example isolated concept route
+
+## Real-estate design laboratory
+
+The original AGS experience remains at `/`. Nine additional prototypes are isolated below `app/designs/`, with shared theme-scoped presentation code in `components/designs/`.
+
+- Research synthesis: `docs/real-estate-design-research.md`
+- Individual concept briefs: `docs/design-concepts/`
+- Continuous implementation handoff: `docs/ANTIGRAVITY_PROMPT.md`
+- Shared concept registry: `data/designConcepts.ts`
 
 ## Notes
 

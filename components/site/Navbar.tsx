@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const links = [["Home","/"],["Properties","/properties"],["Projects","/projects"],["About","/about"],["Contact","/contact"]];
+const links = [["Home","/"],["Properties","/properties"],["Projects","/projects"],["Design Lab","/designs"],["About","/about"],["Contact","/contact"]];
 
 export function Navbar() {
   return <><div className="demo-ribbon">Concept Demo for AGS Realtors &amp; Construction — Sample Data</div><header className="site-header">
