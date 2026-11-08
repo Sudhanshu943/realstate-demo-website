@@ -17,7 +17,6 @@ const featureCopy:Record<string,{eyebrow:string;headline:string;body:string;cta:
 };
 
 export function ConceptPage({concept}:{concept:DesignConcept}){const copy=featureCopy[concept.theme];const featured=properties.slice(0,3);return <main className={styles.concept} data-theme={concept.theme}>
-  <Link href="/designs" className={styles.back}>← <span>Back to design menu</span></Link>
   <nav className={styles.conceptNav}><b>{concept.shortTitle}</b><div><a href="#collection">Collection</a><a href="#approach">Approach</a><a href="#contact">Enquire</a></div><button>Menu</button></nav>
   <section className={styles.conceptHero}>
     <Image src={concept.theme==="editorial"?"/images/residence.png":concept.theme==="heritage"?"/images/villa.png":"/images/hero-dehradun.png"} alt="Sample property concept" fill priority sizes="100vw"/>

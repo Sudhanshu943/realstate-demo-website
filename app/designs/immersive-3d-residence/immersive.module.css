@@ -1,0 +1,1005 @@
+.immersivePage {
+  background-color: #06090e;
+  color: #e2e8f0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, monospace, sans-serif;
+  line-height: 1.5;
+  padding-bottom: 0;
+}
+
+/* 1. TOP SPATIAL TELEMETRY RIBBON */
+.topBar {
+  background: #0b111a;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 12px clamp(20px, 5vw, 64px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 700 0.72rem monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #38bdf8;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.topBarStatus {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #94a3b8;
+}
+
+.pulseDot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 10px #38bdf8;
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+/* 2. BRAND NAVBAR */
+.navbar {
+  background: rgba(6, 9, 14, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.navContainer {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px clamp(20px, 5vw, 64px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.brandLogoBox {
+  width: 42px;
+  height: 42px;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.2) 0%, rgba(129, 140, 248, 0.2) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: #38bdf8;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.25);
+}
+
+.brandTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.brandSub {
+  font-size: 0.72rem;
+  font-family: monospace;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navLink:hover {
+  color: #38bdf8;
+}
+
+.orbitNavBtn {
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 16px rgba(2, 132, 199, 0.4);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.orbitNavBtn:hover {
+  box-shadow: 0 0 24px rgba(56, 189, 248, 0.6);
+  transform: translateY(-1px);
+}
+
+/* 3. HERO & SPATIAL SEARCH ENGINE */
+.heroSection {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 64px clamp(20px, 5vw, 64px) 32px;
+}
+
+.heroTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(56, 189, 248, 0.1);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 6px 14px;
+  border-radius: 100px;
+  color: #38bdf8;
+  font: 700 0.72rem monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.heroTitle {
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  max-width: 980px;
+  margin: 0 0 20px 0;
+}
+
+.heroGradient {
+  background: linear-gradient(135deg, #ffffff 0%, #38bdf8 50%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroDesc {
+  font-size: 1.05rem;
+  color: #94a3b8;
+  max-width: 760px;
+  line-height: 1.6;
+  margin: 0 0 40px 0;
+}
+
+/* Hero Search Ribbon */
+.searchRibbon {
+  background: #0f172a;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  border-radius: 12px;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) auto;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.searchField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.searchField label {
+  font: 700 0.68rem monospace;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.05em;
+}
+
+.searchField select {
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.searchField select:focus {
+  border-color: #38bdf8;
+}
+
+.searchBtn {
+  background: #38bdf8;
+  color: #020617;
+  border: none;
+  padding: 12px 24px;
+  font: 700 0.85rem monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  height: 42px;
+  align-self: flex-end;
+}
+
+.searchBtn:hover {
+  background: #7dd3fc;
+  box-shadow: 0 0 16px rgba(56, 189, 248, 0.5);
+}
+
+/* 4. 3D SPATIAL WORKSPACE CONTAINER */
+.spatialSection {
+  max-width: 1400px;
+  margin: 40px auto 72px;
+  padding: 0 clamp(20px, 5vw, 64px);
+}
+
+.sectionHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.sectionKicker {
+  color: #38bdf8;
+  font: 700 0.72rem monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.sectionHeading h2 {
+  font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin: 0;
+  color: #ffffff;
+}
+
+.telemetryStrip {
+  display: flex;
+  gap: 20px;
+  font: 700 0.72rem monospace;
+  color: #64748b;
+  flex-wrap: wrap;
+}
+
+.telemetryStrip strong {
+  color: #38bdf8;
+}
+
+.spatialWorkspace {
+  background: #0a0f18;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.7);
+}
+
+.controlRibbon {
+  background: #0f172a;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.floorSelector {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.floorBtn {
+  background: #1e293b;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  color: #94a3b8;
+  padding: 8px 16px;
+  font: 700 0.74rem monospace;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.floorBtn:hover {
+  color: #ffffff;
+  border-color: #38bdf8;
+}
+
+.floorBtn.activeFloor {
+  background: #38bdf8;
+  color: #020617;
+  border-color: #38bdf8;
+  font-weight: 800;
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.35);
+}
+
+.orbitControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 700 0.72rem monospace;
+  color: #64748b;
+}
+
+.orbitBtn {
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #cbd5e1;
+  padding: 6px 12px;
+  font: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.orbitBtn:hover {
+  border-color: #38bdf8;
+  color: #ffffff;
+}
+
+.orbitBtn.activeOrbit {
+  border-color: #38bdf8;
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+/* 3D Canvas / SVG Spatial Viewport */
+.spatialViewport {
+  position: relative;
+  height: 520px;
+  background: radial-gradient(circle at 50% 45%, #0f1e33 0%, #06090e 85%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.gridLinesBg {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(56, 189, 248, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(56, 189, 248, 0.06) 1px, transparent 1px);
+  background-size: 36px 36px;
+  pointer-events: none;
+}
+
+.spatialSvg {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hudInfoOverlay {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  background: rgba(11, 17, 26, 0.9);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  padding: 16px 20px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  max-width: 420px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.hudInfoOverlay strong {
+  display: block;
+  color: #38bdf8;
+  font-size: 1.02rem;
+  margin-bottom: 6px;
+}
+
+.hudInfoOverlay p {
+  margin: 0;
+  color: #94a3b8;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.compassOverlay {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: rgba(11, 17, 26, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px 16px;
+  font: 700 0.72rem monospace;
+  color: #94a3b8;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.compassOverlay span {
+  color: #38bdf8;
+}
+
+/* Unit Detail Drawer */
+.unitDetailSection {
+  background: #0b111a;
+  border-top: 1px solid rgba(56, 189, 248, 0.2);
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.unitStats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.statItem span {
+  display: block;
+  font: 700 0.68rem monospace;
+  text-transform: uppercase;
+  color: #64748b;
+  margin-bottom: 4px;
+  letter-spacing: 0.05em;
+}
+
+.statItem strong {
+  color: #ffffff;
+  font-size: 1.2rem;
+  letter-spacing: -0.01em;
+}
+
+.reserveBtn {
+  background: #38bdf8;
+  color: #020617;
+  border: none;
+  padding: 16px 24px;
+  font: 800 0.82rem monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.reserveBtn:hover {
+  background: #7dd3fc;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+/* 5. ACCESSIBLE 2D SPECIFICATION REGISTER */
+.fallbackSection {
+  max-width: 1400px;
+  margin: 48px auto 80px;
+  padding: 0 clamp(20px, 5vw, 64px);
+}
+
+.tableContainer {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #0b111a;
+  border-radius: 10px;
+  padding: 32px;
+  overflow-x: auto;
+}
+
+.fallbackHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.fallbackHeader h3 {
+  font-size: 1.35rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.fallbackHeader span {
+  font: 700 0.72rem monospace;
+  color: #38bdf8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.unitTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+.unitTable th {
+  padding: 14px 16px;
+  font: 700 0.72rem monospace;
+  text-transform: uppercase;
+  color: #64748b;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  letter-spacing: 0.05em;
+}
+
+.unitTable td {
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+}
+
+.unitTable tr:hover {
+  background: rgba(56, 189, 248, 0.04);
+}
+
+/* 6. VR-READY PROPERTY CATALOGUE (3-COLUMN GRID) */
+.catalogueSection {
+  max-width: 1400px;
+  margin: 0 auto 96px;
+  padding: 0 clamp(20px, 5vw, 64px);
+}
+
+.grid3Col {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.residenceCard {
+  background: #0b111a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.residenceCard:hover {
+  border-color: rgba(56, 189, 248, 0.5);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+
+.cardImageWrapper {
+  position: relative;
+  width: 100%;
+  height: 240px;
+}
+
+.vrBadge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: rgba(6, 9, 14, 0.85);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  color: #38bdf8;
+  font: 700 0.68rem monospace;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.05em;
+  z-index: 2;
+}
+
+.fpsBadge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(16, 185, 129, 0.5);
+  color: #34d399;
+  font: 700 0.68rem monospace;
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 2;
+}
+
+.cardBody {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cardLocation {
+  font: 700 0.72rem monospace;
+  color: #38bdf8;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+  letter-spacing: -0.01em;
+}
+
+.cardDesc {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+  flex: 1;
+}
+
+.cardSpecs {
+  display: flex;
+  gap: 16px;
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  margin-bottom: 20px;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardPrice {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cardCta {
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  color: #38bdf8;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font: 700 0.74rem monospace;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cardCta:hover {
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* 7. SPATIAL ARCHITECTURE PILLARS (4-COLUMN GRID) */
+.pillarsSection {
+  background: #090e17;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 80px clamp(20px, 5vw, 64px);
+}
+
+.pillarsInner {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.grid4Col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.pillarCard {
+  background: #0e1522;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 28px 24px;
+  transition: border-color 0.2s;
+}
+
+.pillarCard:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.pillarIcon {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.pillarCard h4 {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.pillarCard p {
+  font-size: 0.85rem;
+  color: #94a3b8;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* 8. VIP VR HEADSET & WALKTHROUGH BOOKING FORM */
+.bookingSection {
+  max-width: 1400px;
+  margin: 96px auto 96px;
+  padding: 0 clamp(20px, 5vw, 64px);
+}
+
+.bookingContainer {
+  background: linear-gradient(135deg, #0b111a 0%, #080d14 100%);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 16px;
+  padding: clamp(32px, 5vw, 64px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8);
+}
+
+.bookingInfo h3 {
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 16px 0;
+  color: #ffffff;
+}
+
+.bookingInfo p {
+  font-size: 0.95rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin: 0 0 28px 0;
+}
+
+.bookingPills {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.bookingPillItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+}
+
+.bookingPillItem span {
+  color: #38bdf8;
+  font-weight: bold;
+}
+
+.bookingForm {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 32px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  font: 700 0.72rem monospace;
+  text-transform: uppercase;
+  color: #94a3b8;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+.formInput, .formSelect {
+  width: 100%;
+  background: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 12px 16px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.formInput:focus, .formSelect:focus {
+  border-color: #38bdf8;
+}
+
+.submitBtn {
+  width: 100%;
+  background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+  color: #ffffff;
+  border: none;
+  padding: 14px 24px;
+  font: 700 0.85rem monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 12px;
+}
+
+.submitBtn:hover {
+  background: linear-gradient(135deg, #0369a1 0%, #1d4ed8 100%);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+}
+
+.successCard {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.successCard h4 {
+  color: #34d399;
+  font-size: 1.2rem;
+  margin: 0 0 8px 0;
+}
+
+.successCard p {
+  color: #cbd5e1;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* 9. COLOPHON & FOOTER */
+.footer {
+  background: #04060a;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 64px clamp(20px, 5vw, 64px) 40px;
+}
+
+.footerInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+}
+
+.footerBrand h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.footerBrand p {
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.6;
+  max-width: 380px;
+  margin: 0 0 16px 0;
+}
+
+.legalNotice {
+  font: 700 0.68rem monospace;
+  color: #475569;
+  text-transform: uppercase;
+}
+
+.footerCol h5 {
+  font: 700 0.72rem monospace;
+  text-transform: uppercase;
+  color: #38bdf8;
+  letter-spacing: 0.1em;
+  margin: 0 0 16px 0;
+}
+
+.footerCol ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerCol a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+
+.footerCol a:hover {
+  color: #ffffff;
+}
+
+.footerBottom {
+  max-width: 1400px;
+  margin: 48px auto 0;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: #475569;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* RESPONSIVE QUERIES */
+@media (max-width: 1100px) {
+  .searchRibbon {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid3Col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid4Col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bookingContainer {
+    grid-template-columns: 1fr;
+  }
+  .footerInner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+  .searchRibbon {
+    grid-template-columns: 1fr;
+  }
+  .unitDetailSection {
+    grid-template-columns: 1fr;
+  }
+  .unitStats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid3Col {
+    grid-template-columns: 1fr;
+  }
+  .grid4Col {
+    grid-template-columns: 1fr;
+  }
+  .footerInner {
+    grid-template-columns: 1fr;
+  }
+}

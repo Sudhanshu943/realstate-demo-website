@@ -29,6 +29,50 @@ Across the sources reviewed, the recurring professional patterns are:
 - [React Three Fiber official introduction](https://r3f.docs.pmnd.rs/getting-started/introduction)
 - [Google model-viewer documentation](https://modelviewer.dev/docs/index.html)
 - [Matterport overview of real-estate virtual-tour tools](https://matterport.com/blog/best-virtual-tour-software-for-real-estate)
+- [Toimi Pro luxury real estate UX analysis](https://toimi.pro)
+- [Luxury Presence HNWI conversion and digital trust infrastructure](https://luxurypresence.com)
+
+## Advanced concept innovations & roadmap (2026+)
+
+To elevate the ten concepts from visual prototypes into market-defining real-estate digital experiences, the following feature additions and architectural expansions have been researched:
+
+### 1. Cross-Concept Experience Layer
+- **Collaborative Client-Advisor Collections:** Shared private spaces where clients and wealth advisors / agents co-curate, annotate, and evaluate listings without clunky email chains.
+- **Discreet "Private Exclusives" Vault:** Gated, NDA-backed listing tiers for off-market properties that preserve owner privacy while providing verifiable VIP exclusivity.
+- **Frictionless Private Advisor Rail:** Context-aware, persistent drawer replacing invasive lead modals with one-tap WhatsApp concierge, direct calendar sync, or signal-encrypted queries.
+
+### 2. Concept-Specific Innovation Roadmap
+1. **01 — Foothill Quiet Luxury:**
+   - *Microclimate & Canopy Depth Radar:* Interactive visualization of elevation, air quality index (AQI), morning mountain shadow lines, and seasonal breeze patterns.
+   - *Audio Ambience Mode:* Subtle optional mountain soundscape (foothill breeze, pine rustle) respecting system media preferences.
+2. **02 — Monochrome Editorial:**
+   - *Issue-based Layout Shifts:* Paced long-form editorial narratives with dual-column reading modes, high-contrast Didone/Grotesk typestyle toggles, and photo-essay view.
+   - *Curator's Notes:* Embedded audio commentary or signed architect essays beneath selected property photo galleries.
+3. **03 — Map-first Property Finder:**
+   - *Isochrone Commute & Terrain Contours:* Real-time travel time radius (e.g., 20 mins to Jolly Grant airport or Rajpur center) superimposed on topographic contour maps.
+   - *Multi-polygon Geospatial Lasso:* Freeform boundary drawing tool with live property count and price-per-sqft heatmaps.
+4. **04 — Architectural Grid:**
+   - *Interactive Blueprint Layer Switcher:* SVG/Canvas overlay toggling structural frames, MEP (mechanical/electrical/plumbing), natural lighting vectors, and material specifications.
+   - *Dimension Inspector:* Calibrated cursor tool allowing prospective buyers to measure room spans, ceiling clearances, and window apertures directly on screen.
+5. **05 — Biophilic Wellness Living:**
+   - *Circadian Lighting Simulator:* Interactive scrubber demonstrating how natural sunlight sweeps through primary living spaces from dawn to dusk across equinoxes.
+   - *Botanical & Ecology Ledger:* Species index of native flora surrounding the property, water harvesting metrics, and natural shading percentages.
+6. **06 — Urban Neo-brutalist:**
+   - *Terminal / Power-User Navigation:* Monospaced keyboard shortcut HUD (`J`/`K` navigation, `/` search, `C` compare, `E` export CSV) for high-velocity investors and architects.
+   - *Raw Construction Material Index:* Honest breakdown of exposed aggregate, board-formed concrete specifications, and structural load ratings without marketing hyperbole.
+7. **07 — Investment Intelligence:**
+   - *Dynamic Sensitivity & Yield Modeler:* Interactive sliders for projected occupancy, short-term vs long-term rental rates, stamp duty, maintenance reserve, and 5/10-year IRR.
+   - *Locality Capital Growth Benchmark:* Real-time indexed comparison of micro-market appreciation against regional benchmarks and inflation.
+8. **08 — Heritage Estate:**
+   - *Archival Timeline & Provenance Ledger:* Historical chronology slider juxtaposing vintage archival photographs or hand-drawn municipal plans with current restored states.
+   - *Craft & Conservation Documentation:* Detailed dossier on restoration materials (lime plaster, reclaimed timber, artisanal stonemasonry) and conservation status.
+9. **09 — Coastal Lifestyle:**
+   - *Tide & Nautical Conditions HUD:* Live tidal data, sea-breeze vectors, water depth at private dockage/moorings, and direct proximity to maritime launch points.
+   - *Coastal Elevation & Resilience Visualizer:* Transparent flood line, setback, and salt-air weathering mitigation profiles.
+10. **10 — Immersive 3D Residence:**
+    - *Sunlight & Shadow Raycasting:* Real-time sun angle simulation based on real geographic coordinates and time-of-day.
+    - *Interactive Floorplate Slicer:* Cutaway vertical navigation permitting selective isolation of floors, penthouses, and private terraces with instant unit availability indicators.
+    - *Progressive WebGL/WebGPU Pipeline:* Zero-friction fallback to high-resolution webp panoramas and 2D dimensional schematics for low-bandwidth mobile users.
 
 ## Recommended information architecture
 

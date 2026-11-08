@@ -1,0 +1,859 @@
+.gridPage {
+  background-color: #09131c;
+  color: #d9d7d0;
+  min-height: 100vh;
+  font-family: "SF Mono", Monaco, Consolas, "Fira Code", monospace;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Background blueprint grid */
+.gridBackground {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(24, 50, 74, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(24, 50, 74, 0.35) 1px, transparent 1px);
+  background-size: 28px 28px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.contentWrap {
+  position: relative;
+  z-index: 2;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* 1. TECHNICAL TOP BAR */
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #18324a;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.headerTelemetry {
+  color: #8da4b8;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.telemetryBadge {
+  background: rgba(242, 106, 46, 0.15);
+  color: #f26a2e;
+  border: 1px solid rgba(242, 106, 46, 0.3);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+/* 2. ARCHITECTURAL BRAND NAVBAR */
+.brandNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #18324a;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.cadLogoSquare {
+  width: 42px;
+  height: 42px;
+  background: #f26a2e;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+}
+
+.brandText {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.brandSubtitle {
+  font-size: 0.7rem;
+  color: #8da4b8;
+  letter-spacing: 0.1em;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #8da4b8;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.15s;
+}
+.navLink:hover {
+  color: #f26a2e;
+}
+
+.cadSpecSheetBtn {
+  background: transparent;
+  color: #f26a2e;
+  border: 1px solid #f26a2e;
+  border-radius: 2px;
+  padding: 8px 16px;
+  font-size: 0.75rem;
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.cadSpecSheetBtn:hover {
+  background: #f26a2e;
+  color: #ffffff;
+}
+
+/* 3. HERO SEARCH & TECHNICAL FILTER */
+.searchSection {
+  padding: 24px 0 32px;
+  border-bottom: 1px solid #18324a;
+}
+
+.searchHeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.searchHeaderTitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 4px;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+}
+
+.searchHeaderSub {
+  font-size: 0.85rem;
+  color: #8da4b8;
+  margin: 0;
+}
+
+.filterCard {
+  background: #0e1b26;
+  border: 1px solid #18324a;
+  border-radius: 4px;
+  padding: 16px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) auto;
+  gap: 16px;
+  align-items: end;
+}
+
+.filterField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filterField label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #f26a2e;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.filterSelect {
+  width: 100%;
+  padding: 8px 12px;
+  background: #09131c;
+  border: 1px solid #234360;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.8rem;
+  outline: none;
+  border-radius: 2px;
+}
+.filterSelect:focus {
+  border-color: #f26a2e;
+}
+
+.resetBtn {
+  background: #18324a;
+  color: #d9d7d0;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 18px;
+  font-size: 0.78rem;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background 0.15s;
+}
+.resetBtn:hover {
+  background: #234360;
+}
+
+/* 4. HERO PROJECT & INTERACTIVE BLUEPRINT WORKSPACE */
+.heroProject {
+  padding: 48px 0;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: 40px;
+  border-bottom: 1px solid #18324a;
+}
+
+.projectTitleBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.projectIndexTag {
+  display: inline-block;
+  background: #f26a2e;
+  color: #ffffff;
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  width: max-content;
+  margin-bottom: 16px;
+  border-radius: 2px;
+}
+
+.heroProject h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin: 0 0 16px;
+  text-transform: uppercase;
+}
+
+.heroProjectLead {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: #a4b5c4;
+  margin: 0 0 24px;
+}
+
+.dataGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  border-top: 1px solid #18324a;
+  padding-top: 16px;
+}
+
+.dataCell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dataCell span {
+  font-size: 0.68rem;
+  color: #6d869c;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.dataCell strong {
+  color: #ffffff;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.heroActionRow {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.specBtnPrimary {
+  background: #f26a2e;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  padding: 10px 18px;
+  font-size: 0.78rem;
+  font-family: inherit;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.specBtnPrimary:hover {
+  background: #ff7d45;
+}
+
+.specBtnSecondary {
+  background: transparent;
+  color: #d9d7d0;
+  border: 1px solid #234360;
+  border-radius: 2px;
+  padding: 10px 18px;
+  font-size: 0.78rem;
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  text-decoration: none;
+}
+.specBtnSecondary:hover {
+  border-color: #8da4b8;
+}
+
+/* Blueprint Layer Switcher */
+.blueprintSection {
+  background: #0e1b26;
+  border: 1px solid #18324a;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.layerControls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid #18324a;
+  padding-bottom: 14px;
+}
+
+.layerBtn {
+  background: #09131c;
+  border: 1px solid #234360;
+  color: #8da4b8;
+  padding: 6px 12px;
+  font-size: 0.72rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s ease;
+}
+.layerBtn:hover {
+  border-color: #f26a2e;
+  color: #ffffff;
+}
+.layerBtn.active {
+  background: #f26a2e;
+  border-color: #f26a2e;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.canvasBox {
+  position: relative;
+  height: 420px;
+  background: #070e16;
+  border: 1px solid #18324a;
+  overflow: hidden;
+}
+
+.blueprintSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.layerInfoBox {
+  background: rgba(9, 19, 28, 0.9);
+  border: 1px solid #18324a;
+  padding: 12px 16px;
+  font-size: 0.78rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+}
+
+/* 5. FULL ENGINEERED RESIDENCE CATALOGUE */
+.catalogueSection {
+  padding: 64px 0;
+  border-bottom: 1px solid #18324a;
+}
+
+.catalogueHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid #18324a;
+  padding-bottom: 16px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.catalogueTitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.catalogueGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.propertyCard {
+  background: #0e1b26;
+  border: 1px solid #18324a;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.propertyCard:hover {
+  border-color: #f26a2e;
+  transform: translateY(-2px);
+}
+
+.cardImgWrap {
+  position: relative;
+  height: 200px;
+  border-bottom: 1px solid #18324a;
+  background: #070e16;
+}
+
+.cardImg {
+  object-fit: cover;
+}
+
+.cardBadgeCad {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(9, 19, 28, 0.9);
+  border: 1px solid #f26a2e;
+  color: #f26a2e;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 2px;
+  letter-spacing: 0.08em;
+}
+
+.cardBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.cardTopRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: #6d869c;
+}
+
+.cardLocality {
+  color: #f26a2e;
+  font-weight: 700;
+}
+
+.cardTitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.cardDesc {
+  font-size: 0.8rem;
+  color: #8da4b8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.specMatrix {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  border-top: 1px solid #18324a;
+  padding-top: 12px;
+  font-size: 0.72rem;
+}
+
+.specRow {
+  display: flex;
+  justify-content: space-between;
+}
+.specRow span:first-child {
+  color: #6d869c;
+}
+.specRow span:last-child {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.cardPriceRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #18324a;
+  padding-top: 12px;
+  margin-top: auto;
+}
+
+.cardPrice {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.cardCtaBtn {
+  background: #f26a2e;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  padding: 6px 12px;
+  font-size: 0.72rem;
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  text-decoration: none;
+}
+.cardCtaBtn:hover {
+  background: #ff7d45;
+}
+
+/* 6. SWISS TECTONIC TENETS */
+.tenetsSection {
+  padding: 64px 0;
+  border-bottom: 1px solid #18324a;
+}
+
+.tenetsHeader {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 36px;
+}
+
+.tenetsOverline {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #f26a2e;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.tenetsTitle {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+
+.tenetsSub {
+  font-size: 0.88rem;
+  color: #8da4b8;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.tenetsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.tenetCard {
+  background: #0e1b26;
+  border: 1px solid #18324a;
+  border-radius: 4px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tenetNumber {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #f26a2e;
+}
+
+.tenetName {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.tenetText {
+  font-size: 0.8rem;
+  color: #8da4b8;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* 7. STRUCTURAL AUDIT & SEISMIC COMPLIANCE */
+.auditSection {
+  padding: 64px 0;
+  border-bottom: 1px solid #18324a;
+}
+
+.auditGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.auditLead h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+}
+
+.auditLead p {
+  font-size: 0.88rem;
+  color: #8da4b8;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.auditSpecsTable {
+  background: #0e1b26;
+  border: 1px solid #18324a;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auditRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #18324a;
+  padding-bottom: 10px;
+  font-size: 0.78rem;
+}
+.auditRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.auditRow span:first-child {
+  color: #8da4b8;
+}
+.auditRow span:last-child {
+  color: #f26a2e;
+  font-weight: 700;
+}
+
+/* 8. TECHNICAL SITE SURVEY FORM */
+.leadSection {
+  background: #070e16;
+  border: 1px solid #18324a;
+  border-radius: 6px;
+  padding: 48px 36px;
+  margin: 64px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.leadInfo h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 12px;
+  text-transform: uppercase;
+}
+
+.leadInfo p {
+  font-size: 0.88rem;
+  color: #8da4b8;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.formBox {
+  background: #0e1b26;
+  border: 1px solid #234360;
+  border-radius: 4px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px 12px;
+  background: #09131c;
+  border: 1px solid #18324a;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.82rem;
+  border-radius: 2px;
+  outline: none;
+}
+.formInput:focus {
+  border-color: #f26a2e;
+}
+
+.formSubmitBtn {
+  background: #f26a2e;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  padding: 12px;
+  font-size: 0.85rem;
+  font-family: inherit;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.formSubmitBtn:hover {
+  background: #ff7d45;
+}
+
+/* 9. FOOTER */
+.footer {
+  border-top: 1px solid #18324a;
+  padding: 40px 0 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 0.74rem;
+  color: #6d869c;
+}
+
+.footerTopRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.footerBottomRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-top: 1px solid #18324a;
+  padding-top: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .catalogueGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tenetsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .heroProject {
+    grid-template-columns: 1fr;
+  }
+  .auditGrid {
+    grid-template-columns: 1fr;
+  }
+  .leadSection {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .navLinks {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .catalogueGrid {
+    grid-template-columns: 1fr;
+  }
+  .tenetsGrid {
+    grid-template-columns: 1fr;
+  }
+}

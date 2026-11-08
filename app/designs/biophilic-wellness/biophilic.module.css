@@ -1,0 +1,762 @@
+.biophilicPage {
+  background-color: #f6f3eb;
+  color: #244236;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Nunito", sans-serif;
+  line-height: 1.6;
+}
+
+/* 1. TOP TELEMETRY RIBBON */
+.topTelemetryBar {
+  background: #1c352a;
+  color: #e2ddd3;
+  padding: 10px 24px;
+  font-size: 0.74rem;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.topTelemetryInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.telemetryGroup {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.telemetryItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.telemetryDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #52b788;
+  box-shadow: 0 0 6px #52b788;
+}
+
+.conceptBadge {
+  background: rgba(82, 183, 136, 0.2);
+  color: #a7cfba;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  border: 1px solid rgba(82, 183, 136, 0.3);
+}
+
+/* 2. BRAND NAVBAR */
+.brandNavbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e8e3d8;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  box-shadow: 0 2px 10px rgba(36, 66, 54, 0.04);
+}
+
+.navInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brandLogoGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.leafLogo {
+  width: 40px;
+  height: 40px;
+  background: #244236;
+  color: #f6f3eb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.brandTitle {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #244236;
+  line-height: 1.15;
+}
+
+.brandSub {
+  font-size: 0.72rem;
+  color: #71856b;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.navMenuItems {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #4a5d52;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+.navLink:hover {
+  color: #b46d4d;
+}
+
+.navActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.phoneLink {
+  font-size: 0.82rem;
+  color: #244236;
+  font-weight: 700;
+  text-decoration: none;
+}
+.phoneLink:hover {
+  color: #b46d4d;
+}
+
+.walkBtn {
+  background: #b46d4d;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.walkBtn:hover {
+  background: #96563a;
+}
+
+/* 3. HERO DISCOVERY & SEARCH SECTION */
+.heroSection {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 24px 32px;
+}
+
+.heroLeadGroup {
+  max-width: 840px;
+  margin-bottom: 32px;
+}
+
+.kicker {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #b46d4d;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.heroHeading {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: clamp(2.4rem, 4.5vw, 4rem);
+  line-height: 1.1;
+  color: #244236;
+  font-weight: 400;
+  margin: 0 0 16px;
+}
+
+.heroHeading em {
+  font-style: italic;
+  color: #71856b;
+}
+
+.heroIntro {
+  font-size: 1.05rem;
+  color: #4a5d52;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Biophilic Search Bar */
+.searchCard {
+  background: #ffffff;
+  border: 1px solid #e2ddd3;
+  border-radius: 14px;
+  padding: 16px 20px;
+  box-shadow: 0 8px 24px rgba(36, 66, 54, 0.05);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) auto;
+  gap: 14px;
+  align-items: end;
+}
+
+.searchField {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.searchField label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #71856b;
+}
+
+.searchSelect {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #d4cebe;
+  border-radius: 8px;
+  background: #faf8f3;
+  color: #244236;
+  font-size: 0.85rem;
+  font-weight: 600;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.searchSelect:focus {
+  border-color: #244236;
+  background: #ffffff;
+}
+
+.resetBtn {
+  background: #ede8de;
+  color: #4a5d52;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+  height: 40px;
+}
+.resetBtn:hover {
+  background: #dfd8cb;
+}
+
+/* 4. CIRCADIAN DAYLIGHT WIDGET */
+.circadianSection {
+  max-width: 1440px;
+  margin: 24px auto 48px;
+  padding: 0 24px;
+}
+
+.circadianWidget {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2ddd3;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(36, 66, 54, 0.05);
+}
+
+.circadianHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #ede8de;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.circadianHeader h2 {
+  font-family: "Georgia", serif;
+  font-size: 1.6rem;
+  color: #244236;
+  margin: 0;
+  font-weight: 400;
+}
+
+.timePills {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.timePill {
+  border: 1px solid #71856b;
+  background: transparent;
+  color: #244236;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.timePill.active {
+  background: #244236;
+  color: #f3efe4;
+  border-color: #244236;
+}
+
+.circadianDetails {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 32px;
+  align-items: center;
+  background: #faf8f3;
+  border-radius: 12px;
+  padding: 24px;
+  border: 1px solid #ede8de;
+}
+
+.lightGraphic {
+  position: relative;
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-align: center;
+  padding: 20px;
+}
+
+.lightText h4 {
+  font-family: "Georgia", serif;
+  font-size: 1.3rem;
+  color: #244236;
+  margin: 0 0 8px;
+}
+
+.lightText p {
+  color: #3b5044;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  margin: 0 0 14px;
+}
+
+.lightMetricsBar {
+  display: flex;
+  gap: 16px;
+  font-size: 0.75rem;
+  color: #71856b;
+  font-weight: 600;
+  border-top: 1px solid #e8e3d8;
+  padding-top: 10px;
+}
+
+/* 5. SANCTUARY PROPERTY CATALOGUE (3-COLUMN GRID) */
+.homesSection {
+  max-width: 1440px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+
+.sectionHeadingGroup {
+  margin-bottom: 28px;
+}
+
+.sectionHeading {
+  font-family: "Georgia", serif;
+  font-size: 2.2rem;
+  color: #244236;
+  font-weight: 400;
+  margin: 0 0 8px;
+}
+
+.sectionSub {
+  font-size: 0.95rem;
+  color: #4a5d52;
+  margin: 0;
+}
+
+.homesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.homeCard {
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #e2ddd3;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.homeCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(36, 66, 54, 0.08);
+}
+
+.homeImgWrap {
+  position: relative;
+  height: 220px;
+  background: #ddd8ce;
+}
+
+.homeImg {
+  object-fit: cover;
+}
+
+.natureBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(36, 66, 54, 0.9);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  backdrop-filter: blur(4px);
+}
+
+.homeBody {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.homeLocality {
+  font-size: 0.72rem;
+  color: #71856b;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.homeTitle {
+  font-family: "Georgia", serif;
+  font-size: 1.25rem;
+  margin: 0;
+  color: #244236;
+  font-weight: 700;
+}
+
+.homePrice {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #b46d4d;
+}
+
+.homeDesc {
+  font-size: 0.82rem;
+  color: #4a5d52;
+  margin: 0;
+  line-height: 1.55;
+}
+
+.wellnessTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid #f0ede4;
+}
+
+.tag {
+  background: #f0ede4;
+  color: #244236;
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.homeCardAction {
+  margin-top: 8px;
+  background: #244236;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.homeCardAction:hover {
+  background: #1c352a;
+}
+
+/* 6. FLORA LEDGER (4-COLUMN GRID) */
+.floraSection {
+  background: #244236;
+  color: #f3efe4;
+  padding: 64px 24px;
+  margin: 64px 0;
+}
+
+.floraInner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.floraHeader {
+  margin-bottom: 36px;
+}
+
+.floraHeader h2 {
+  font-family: "Georgia", serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 6px 0;
+}
+
+.floraGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.floraCard {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.floraCard h3 {
+  font-size: 1.15rem;
+  margin: 0;
+  font-family: "Georgia", serif;
+  color: #ffffff;
+}
+
+.floraSpecies {
+  font-size: 0.74rem;
+  color: #a7cfba;
+  font-style: italic;
+}
+
+.floraCard p {
+  font-size: 0.82rem;
+  color: #d1ded6;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* 7. BIOPHILIC LIVING PILLARS (4-COLUMN GRID) */
+.pillarsSection {
+  max-width: 1440px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.pillarCard {
+  background: #ffffff;
+  border: 1px solid #e2ddd3;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pillarIcon {
+  font-size: 1.8rem;
+}
+
+.pillarTitle {
+  font-family: "Georgia", serif;
+  font-size: 1.15rem;
+  color: #244236;
+  margin: 0;
+  font-weight: 700;
+}
+
+.pillarText {
+  font-size: 0.82rem;
+  color: #4a5d52;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 8. MORNING MIST WALKING TOUR LEAD FORM */
+.leadSection {
+  background: #b46d4d;
+  color: #ffffff;
+  padding: 64px 24px;
+}
+
+.leadInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.leadTextGroup h2 {
+  font-family: "Georgia", serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+
+.leadTextGroup p {
+  font-size: 0.95rem;
+  color: #f7e6df;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.leadFormCard {
+  background: #ffffff;
+  color: #244236;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #d4cebe;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  background: #faf8f3;
+  outline: none;
+}
+.formInput:focus {
+  border-color: #b46d4d;
+  background: #ffffff;
+}
+
+.formSubmitBtn {
+  background: #244236;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.formSubmitBtn:hover {
+  background: #1c352a;
+}
+
+/* 9. COLOPHON & FOOTER */
+.siteFooter {
+  background: #1c352a;
+  color: #a7cfba;
+  padding: 48px 24px 80px;
+  font-size: 0.78rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footerContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 24px;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 0.72rem;
+  color: #71856b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .homesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .floraGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pillarsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .circadianDetails {
+    grid-template-columns: 1fr;
+  }
+  .leadInner {
+    grid-template-columns: 1fr;
+  }
+  .navMenuItems {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .homesGrid {
+    grid-template-columns: 1fr;
+  }
+  .floraGrid {
+    grid-template-columns: 1fr;
+  }
+  .pillarsGrid {
+    grid-template-columns: 1fr;
+  }
+}

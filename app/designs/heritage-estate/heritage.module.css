@@ -1,0 +1,579 @@
+.heritagePage {
+  background-color: #fbf8f1;
+  color: #2b1810;
+  min-height: 100vh;
+  font-family: "Georgia", "Times New Roman", serif;
+  line-height: 1.6;
+}
+
+/* 1. TOP ARCHIVAL TELEMETRY BAR */
+.topBar {
+  background: #3e161c;
+  color: #f0e6d6;
+  padding: 10px 24px;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #5a262e;
+}
+
+.topBarInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.conceptBadge {
+  color: #d4af37;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+/* 2. BRAND NAVBAR */
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e8dec8;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  box-shadow: 0 2px 12px rgba(43, 24, 16, 0.04);
+}
+
+.navContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+.sealMark {
+  width: 42px;
+  height: 42px;
+  background: #4a1921;
+  color: #d4af37;
+  border-radius: 50%;
+  border: 1.5px solid #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.brandTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #3e161c;
+  letter-spacing: 0.02em;
+  line-height: 1.15;
+}
+
+.brandSub {
+  font-size: 0.72rem;
+  color: #8c6d48;
+  letter-spacing: 0.05em;
+  font-style: italic;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #4a2d1f;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+.navLink:hover {
+  color: #8c2a38;
+}
+
+.dossierBtn {
+  background: #4a1921;
+  color: #fbf8f1;
+  border: 1px solid #d4af37;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-size: 0.8rem;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.dossierBtn:hover {
+  background: #63232e;
+}
+
+/* 3. HERO SECTION */
+.hero {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 56px 24px 36px;
+  text-align: center;
+}
+
+.kicker {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #9b3d4a;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.hero h1 {
+  font-size: clamp(2.4rem, 4.5vw, 3.8rem);
+  color: #3e161c;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 18px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroLead {
+  font-size: 1.05rem;
+  color: #5a3d31;
+  max-width: 740px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+
+/* 4. PROVENANCE CHRONOLOGY TIMELINE WIDGET */
+.timelineSection {
+  max-width: 1440px;
+  margin: 24px auto 56px;
+  padding: 0 24px;
+}
+
+.timelineCard {
+  background: #ffffff;
+  border: 1px solid #e8dec8;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 10px 30px rgba(62, 22, 28, 0.05);
+}
+
+.timelineHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #f0e6d6;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.timelineHeader h2 {
+  font-size: 1.6rem;
+  color: #3e161c;
+  margin: 0;
+  font-weight: 400;
+}
+
+.eraTabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.eraBtn {
+  background: #faf4e8;
+  border: 1px solid #d4af37;
+  color: #3e161c;
+  padding: 8px 18px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.eraBtn.active {
+  background: #4a1921;
+  color: #fbf8f1;
+  border-color: #4a1921;
+}
+
+.eraDisplay {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
+  align-items: center;
+  background: #faf6ee;
+  border: 1px solid #e8dec8;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+.eraImageWrap {
+  position: relative;
+  height: 280px;
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid #d4af37;
+}
+
+.eraImg {
+  object-fit: cover;
+}
+
+.eraText {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.eraText h3 {
+  font-size: 1.35rem;
+  color: #3e161c;
+  margin: 0;
+  font-weight: 600;
+}
+
+.eraText p {
+  color: #5a3d31;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.sealPill {
+  display: inline-block;
+  background: #4a1921;
+  color: #d4af37;
+  padding: 4px 12px;
+  font-size: 0.72rem;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border-radius: 2px;
+  width: max-content;
+  margin-top: 8px;
+}
+
+/* 5. HERITAGE ESTATE COLLECTION (3-COLUMN GRID) */
+.collectionSection {
+  max-width: 1440px;
+  margin: 56px auto;
+  padding: 0 24px;
+}
+
+.collectionHeader {
+  margin-bottom: 32px;
+}
+
+.collectionHeader h2 {
+  font-size: 2.2rem;
+  color: #3e161c;
+  font-weight: 400;
+  margin: 0 0 8px;
+}
+
+.estateGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.estateCard {
+  background: #ffffff;
+  border: 1px solid #e8dec8;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.estateCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(62, 22, 28, 0.08);
+}
+
+.estateImgWrap {
+  position: relative;
+  height: 220px;
+  background: #f0e6d6;
+}
+
+.estateImg {
+  object-fit: cover;
+}
+
+.estateBody {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.estateLocality {
+  font-size: 0.72rem;
+  color: #8c6d48;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.estateTitle {
+  font-size: 1.25rem;
+  color: #3e161c;
+  margin: 0;
+  font-weight: 600;
+}
+
+.estatePrice {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #8c2a38;
+}
+
+.estateDesc {
+  font-size: 0.85rem;
+  color: #5a3d31;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.particularsBtn {
+  margin-top: auto;
+  background: #fbf8f1;
+  color: #3e161c;
+  border: 1px solid #d4af37;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.particularsBtn:hover {
+  background: #4a1921;
+  color: #fbf8f1;
+}
+
+/* 6. CONSERVATION CHARTER (4-COLUMN GRID) */
+.charterSection {
+  background: #3e161c;
+  color: #fbf8f1;
+  padding: 64px 24px;
+  margin: 64px 0;
+}
+
+.charterInner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.charterHeader {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.charterHeader h2 {
+  font-size: 2.2rem;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0 0 8px;
+}
+
+.charterGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.charterCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 6px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.charterNum {
+  font-size: 1.4rem;
+  color: #d4af37;
+  font-weight: 700;
+}
+
+.charterCard h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+.charterCard p {
+  font-size: 0.82rem;
+  color: #d9cec1;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* 7. CONFIDENTIAL ACQUISITION REGISTER (LEAD FORM) */
+.leadSection {
+  max-width: 1100px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+
+.leadBox {
+  background: #ffffff;
+  border: 1px solid #d4af37;
+  border-radius: 12px;
+  padding: 44px;
+  box-shadow: 0 10px 30px rgba(62, 22, 28, 0.06);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.leadText h2 {
+  font-size: 2rem;
+  color: #3e161c;
+  font-weight: 400;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+
+.leadText p {
+  font-size: 0.92rem;
+  color: #5a3d31;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #d4cebe;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  background: #faf6ee;
+  outline: none;
+}
+.formInput:focus {
+  border-color: #8c2a38;
+  background: #ffffff;
+}
+
+.formSubmitBtn {
+  background: #4a1921;
+  color: #fbf8f1;
+  border: 1px solid #d4af37;
+  border-radius: 4px;
+  padding: 12px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.formSubmitBtn:hover {
+  background: #63232e;
+}
+
+/* 8. FOOTER */
+.footer {
+  background: #2b1810;
+  color: #bfaea5;
+  padding: 48px 24px 80px;
+  font-size: 0.78rem;
+  border-top: 1px solid #4a2d1f;
+}
+
+.footerInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-bottom: 1px solid #4a2d1f;
+  padding-bottom: 24px;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.footerLinks a {
+  color: #d4af37;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .estateGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .charterGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .eraDisplay {
+    grid-template-columns: 1fr;
+  }
+  .leadBox {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .navLinks {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .estateGrid {
+    grid-template-columns: 1fr;
+  }
+  .charterGrid {
+    grid-template-columns: 1fr;
+  }
+}

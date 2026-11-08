@@ -1,0 +1,562 @@
+.coastalPage {
+  background-color: #f7fafc;
+  color: #1e3a47;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+  line-height: 1.6;
+}
+
+/* 1. NAUTICAL LIVE HUD */
+.nauticalHud {
+  background: #0a2540;
+  color: #ffffff;
+  padding: 10px 24px;
+  font-size: 0.74rem;
+  border-bottom: 1px solid #143e66;
+}
+
+.hudInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.hudGroup {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.hudItem {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.hudItem span {
+  font-size: 0.68rem;
+  color: #8da4be;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hudItem strong {
+  color: #38bdf8;
+  font-weight: 700;
+}
+
+/* 2. BRAND NAVBAR */
+.navbar {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  box-shadow: 0 2px 10px rgba(10, 37, 64, 0.05);
+}
+
+.navContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brandLogoBox {
+  width: 40px;
+  height: 40px;
+  background: #0284c7;
+  color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.brandTitle {
+  font-family: "Georgia", serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0a2540;
+  line-height: 1.15;
+}
+
+.brandSub {
+  font-size: 0.7rem;
+  color: #64748b;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #334155;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+.navLink:hover {
+  color: #0284c7;
+}
+
+.tourBtn {
+  background: #f27e62;
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.tourBtn:hover {
+  background: #e0684c;
+}
+
+/* 3. HERO DISCOVERY */
+.hero {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 24px 32px;
+  text-align: center;
+}
+
+.kicker {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #f27e62;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.hero h1 {
+  font-family: "Georgia", serif;
+  font-size: clamp(2.4rem, 4.5vw, 4rem);
+  color: #0a2540;
+  font-weight: 400;
+  line-height: 1.15;
+  margin: 0 0 16px;
+}
+
+.hero h1 em {
+  font-style: italic;
+  color: #0284c7;
+}
+
+.heroLead {
+  font-size: 1.05rem;
+  color: #475569;
+  max-width: 720px;
+  margin: 0 auto 36px;
+  line-height: 1.7;
+}
+
+/* 4. NAUTICAL DAILY ITINERARY */
+.itinerarySection {
+  max-width: 1440px;
+  margin: 24px auto 56px;
+  padding: 0 24px;
+}
+
+.itineraryHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #cbd5e1;
+  padding-bottom: 14px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.itineraryHeader h2 {
+  font-family: "Georgia", serif;
+  font-size: 1.6rem;
+  color: #0a2540;
+  margin: 0;
+  font-weight: 400;
+}
+
+.itineraryGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.itineraryCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
+}
+
+.timeTag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #f27e62;
+  letter-spacing: 0.05em;
+}
+
+.itineraryCard h3 {
+  font-family: "Georgia", serif;
+  font-size: 1.15rem;
+  color: #0a2540;
+  margin: 0;
+}
+
+.itineraryCard p {
+  font-size: 0.82rem;
+  color: #475569;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* 5. WATERFRONT HOMES COLLECTION (3-COLUMN GRID) */
+.homesSection {
+  max-width: 1440px;
+  margin: 56px auto;
+  padding: 0 24px;
+}
+
+.sectionHeading {
+  font-family: "Georgia", serif;
+  font-size: 2.2rem;
+  color: #0a2540;
+  font-weight: 400;
+  margin: 0 0 8px;
+}
+
+.homesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 32px;
+}
+
+.homeCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.homeCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(10, 37, 64, 0.08);
+}
+
+.homeImgWrap {
+  position: relative;
+  height: 220px;
+  background: #cbd5e1;
+}
+
+.homeImg {
+  object-fit: cover;
+}
+
+.homeBody {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.homeLocality {
+  font-size: 0.72rem;
+  color: #0284c7;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.homeTitle {
+  font-family: "Georgia", serif;
+  font-size: 1.25rem;
+  color: #0a2540;
+  margin: 0;
+  font-weight: 600;
+}
+
+.homePrice {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #f27e62;
+}
+
+.homeDesc {
+  font-size: 0.82rem;
+  color: #475569;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.coastalPill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.pill {
+  background: #f0f9ff;
+  color: #0369a1;
+  font-size: 0.7rem;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.discoveryBtn {
+  margin-top: 8px;
+  background: #0a2540;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.discoveryBtn:hover {
+  background: #0284c7;
+}
+
+/* 6. RIPARIAN STANDARDS (4-COLUMN GRID) */
+.standardsSection {
+  background: #0a2540;
+  color: #ffffff;
+  padding: 64px 24px;
+  margin: 64px 0;
+}
+
+.standardsInner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.standardsHeader {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.standardsHeader h2 {
+  font-family: "Georgia", serif;
+  font-size: 2.2rem;
+  color: #ffffff;
+  font-weight: 400;
+  margin: 0 0 8px;
+}
+
+.standardsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.standardCard {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.standardIcon {
+  font-size: 1.8rem;
+}
+
+.standardCard h3 {
+  font-family: "Georgia", serif;
+  font-size: 1.1rem;
+  color: #38bdf8;
+  margin: 0;
+}
+
+.standardCard p {
+  font-size: 0.8rem;
+  color: #cbd5e1;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 7. DISCOVERY STAY LEAD FORM */
+.leadSection {
+  max-width: 1100px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+
+.leadBox {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 44px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.leadText h2 {
+  font-family: "Georgia", serif;
+  font-size: 2rem;
+  color: #0a2540;
+  font-weight: 400;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+
+.leadText p {
+  font-size: 0.92rem;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.formBox {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  background: #f8fafc;
+  outline: none;
+}
+.formInput:focus {
+  border-color: #0284c7;
+  background: #ffffff;
+}
+
+.formSubmitBtn {
+  background: #f27e62;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.formSubmitBtn:hover {
+  background: #e0684c;
+}
+
+/* 8. FOOTER */
+.footer {
+  background: #061826;
+  color: #8da4be;
+  padding: 48px 24px 80px;
+  font-size: 0.78rem;
+  border-top: 1px solid #0f2c42;
+}
+
+.footerInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-bottom: 1px solid #0f2c42;
+  padding-bottom: 24px;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.footerLinks a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .homesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .itineraryGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .standardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .leadBox {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .navLinks {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .homesGrid {
+    grid-template-columns: 1fr;
+  }
+  .itineraryGrid {
+    grid-template-columns: 1fr;
+  }
+  .standardsGrid {
+    grid-template-columns: 1fr;
+  }
+}

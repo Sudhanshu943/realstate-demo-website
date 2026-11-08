@@ -1,0 +1,1019 @@
+.portalWrapper {
+  background: #f8fafc;
+  color: #0f172a;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 1. TOP LAB STRIP */
+.conceptStrip {
+  background: #09131f;
+  color: #94a3b8;
+  padding: 8px 24px;
+  font-size: 0.75rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.conceptStripInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.conceptBadge {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+/* 2. REAL ESTATE NAVBAR */
+.mainNav {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.navContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brandLogoGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.logoIcon {
+  width: 40px;
+  height: 40px;
+  background: #0284c7;
+  color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+
+.brandName {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.brandTagline {
+  font-size: 0.72rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.navMenuItems {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #334155;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+.navLink:hover {
+  color: #0284c7;
+}
+
+.navRightActions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contactPhone {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #0f172a;
+  text-decoration: none;
+}
+.contactPhone:hover {
+  color: #0284c7;
+}
+
+.bookVisitBtn {
+  background: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.bookVisitBtn:hover {
+  background: #0369a1;
+}
+
+/* 3. HERO SEARCH SECTION */
+.heroSearchSection {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 24px;
+}
+
+.heroSearchInner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.heroHeadRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.heroMainTitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 4px;
+  letter-spacing: -0.02em;
+}
+
+.heroSubtext {
+  font-size: 0.88rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Compact Horizontal Search Bar */
+.searchBarCard {
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.searchPill {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.searchPill label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+}
+
+.searchSelect {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 0.82rem;
+  font-weight: 600;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.searchSelect:focus {
+  border-color: #0284c7;
+}
+
+.resetBtn {
+  background: #e2e8f0;
+  color: #334155;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background 0.15s;
+  height: 38px;
+}
+.resetBtn:hover {
+  background: #cbd5e1;
+}
+
+/* 4. SPLIT MAP EXPLORER */
+.mapExplorerSection {
+  max-width: 1440px;
+  margin: 24px auto;
+  padding: 0 24px;
+  width: 100%;
+}
+
+.explorerLayout {
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+  height: 660px;
+}
+
+/* MAP VIEWPORT */
+.mapContainer {
+  position: relative;
+  background: #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-right: 1px solid #e2e8f0;
+}
+
+.mapHud {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 0.74rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.mapHud strong {
+  display: block;
+  font-size: 0.85rem;
+  color: #0f172a;
+}
+.mapHud span {
+  color: #64748b;
+}
+
+.mapControls {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.mapBtn {
+  width: 32px;
+  height: 32px;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+.mapBtn:hover {
+  background: #f8fafc;
+}
+
+.mapSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* MODERN AIRBNB/ZILLOW STYLE PRICE PINS */
+.pinElement {
+  cursor: pointer;
+  transition: transform 0.18s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.pinElement:hover {
+  transform: scale(1.15);
+  z-index: 30;
+}
+.pinElement.activePin {
+  transform: scale(1.22);
+  z-index: 35;
+}
+
+/* FLOATING ACTIVE PROPERTY PREVIEW CARD ON MAP */
+.activePropertyCardOnMap {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 25;
+  background: #ffffff;
+  border: 1.5px solid #0284c7;
+  border-radius: 10px;
+  padding: 10px 12px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
+  display: flex;
+  gap: 12px;
+  width: 310px;
+  align-items: center;
+  animation: cardPop 0.2s ease-out;
+}
+
+@keyframes cardPop {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cardCloseBtn {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+.cardCloseBtn:hover {
+  color: #0f172a;
+  background: #f1f5f9;
+}
+
+.onMapThumb {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  border-radius: 6px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #e2e8f0;
+}
+
+.onMapInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.onMapLocality {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #0284c7;
+  text-transform: uppercase;
+}
+
+.onMapTitle {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.onMapPrice {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.onMapTourLink {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0284c7;
+  text-decoration: underline;
+  margin-top: 2px;
+}
+
+/* RIGHT: LISTING VIEWPORT */
+.listingViewport {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #ffffff;
+}
+
+.listingHeader {
+  padding: 16px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.listingCountText {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.listingSubText {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.listingScrollArea {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* REAL ESTATE CARD IN LIST */
+.propertyCardRow {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 14px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  padding: 12px;
+}
+.propertyCardRow:hover {
+  border-color: #38bdf8;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.08);
+  transform: translateY(-1px);
+}
+.propertyCardRow.selectedCardRow {
+  border-color: #0284c7;
+  background: #f0f9ff;
+  box-shadow: 0 0 0 2px rgba(2, 132, 199, 0.2);
+}
+
+.rowImgWrap {
+  position: relative;
+  width: 140px;
+  height: 110px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #e2e8f0;
+}
+
+.rowImg {
+  object-fit: cover;
+}
+
+.rowBadge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background: rgba(15, 23, 42, 0.85);
+  color: #ffffff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.rowContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rowTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+}
+
+.rowLocality {
+  color: #0284c7;
+  font-weight: 700;
+}
+
+.rowCommute {
+  color: #64748b;
+}
+
+.rowTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 3px 0;
+  line-height: 1.3;
+}
+
+.rowSpecs {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-bottom: 4px;
+}
+
+.rowBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 6px;
+}
+
+.rowPrice {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.rowActionBtn {
+  background: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+.rowActionBtn:hover {
+  background: #0369a1;
+}
+
+/* 5. FEATURED PROJECTS (PERFECT 3-COLUMN GRID) */
+.featuredSection {
+  max-width: 1440px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.sectionHeadingGroup {
+  margin-bottom: 24px;
+}
+
+.sectionOverline {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #0284c7;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.sectionMainHeading {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 6px;
+}
+
+.sectionSubtitle {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.featuredGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.featuredProjectCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+}
+.featuredProjectCard:hover {
+  transform: translateY(-3px);
+  border-color: #0284c7;
+}
+
+.projectImgWrap {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+
+.projectImg {
+  object-fit: cover;
+}
+
+.projectBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #0284c7;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.projectBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.projectLocality {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #0284c7;
+}
+
+.projectName {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.projectDesc {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.projectFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 12px;
+  margin-top: 6px;
+}
+
+.projectTypeTag {
+  font-size: 0.72rem;
+  color: #475569;
+  font-weight: 600;
+}
+
+.projectInquiryBtn {
+  background: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+.projectInquiryBtn:hover {
+  background: #0284c7;
+}
+
+/* 6. NEIGHBORHOODS (PERFECT 4-COLUMN GRID) */
+.neighborhoodsSection {
+  background: #f1f5f9;
+  border-top: 1px solid #e2e8f0;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 48px 24px;
+}
+
+.neighborhoodsInner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.neighborhoodCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.neighborhoodCard {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: all 0.2s ease;
+}
+.neighborhoodCard:hover {
+  border-color: #0284c7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.05);
+}
+
+.nTitle {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.nDesc {
+  font-size: 0.78rem;
+  color: #64748b;
+  line-height: 1.4;
+  margin: 0 0 4px;
+}
+
+.nStatsList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 10px;
+  font-size: 0.75rem;
+}
+
+.nStatRow {
+  display: flex;
+  justify-content: space-between;
+}
+.nStatRow span:first-child {
+  color: #64748b;
+}
+.nStatRow span:last-child {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.nExploreBtn {
+  margin-top: 10px;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #0f172a;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.nExploreBtn:hover {
+  background: #0284c7;
+  border-color: #0284c7;
+  color: #ffffff;
+}
+
+/* 7. WHY CHOOSE US (PERFECT 4-COLUMN GRID) */
+.trustSection {
+  max-width: 1440px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.trustCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.trustIcon {
+  font-size: 1.8rem;
+}
+
+.trustTitle {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0;
+}
+
+.trustText {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* 8. LEAD FORM */
+.leadSection {
+  background: #0f172a;
+  color: #ffffff;
+  padding: 56px 24px;
+}
+
+.leadInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.leadTextGroup h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 12px;
+  line-height: 1.25;
+}
+
+.leadTextGroup p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  line-height: 1.5;
+  margin: 0 0 20px;
+}
+
+.leadFormCard {
+  background: #ffffff;
+  color: #0f172a;
+  border-radius: 12px;
+  padding: 26px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  outline: none;
+}
+.formInput:focus {
+  border-color: #0284c7;
+}
+
+.formSubmitBtn {
+  background: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.formSubmitBtn:hover {
+  background: #0369a1;
+}
+
+/* 9. SITE FOOTER */
+.siteFooter {
+  background: #09131f;
+  color: #94a3b8;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 48px 24px 80px;
+  font-size: 0.8rem;
+}
+
+.footerContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 24px;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  font-size: 0.72rem;
+  color: #64748b;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .featuredGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .neighborhoodCardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .trustGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .explorerLayout {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  .mapContainer {
+    height: 440px;
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  .listingViewport {
+    max-height: 520px;
+  }
+  .leadInner {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .navMenuItems {
+    display: none;
+  }
+  .searchBarCard {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .searchPill {
+    min-width: 100%;
+  }
+  .resetBtn {
+    align-self: stretch;
+  }
+  .heroMainTitle {
+    font-size: 1.45rem;
+  }
+  .featuredGrid {
+    grid-template-columns: 1fr;
+  }
+  .neighborhoodCardsGrid {
+    grid-template-columns: 1fr;
+  }
+  .trustGrid {
+    grid-template-columns: 1fr;
+  }
+  .propertyCardRow {
+    grid-template-columns: 110px 1fr;
+  }
+  .rowImgWrap {
+    width: 110px;
+    height: 90px;
+  }
+}

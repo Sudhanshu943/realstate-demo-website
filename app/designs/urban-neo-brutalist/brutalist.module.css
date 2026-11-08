@@ -1,0 +1,652 @@
+.brutalistPage {
+  background: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* 1. TOP TICKER BAND */
+.tickerBand {
+  background: #ffff00;
+  color: #000000;
+  padding: 8px 24px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 2px solid #ffffff;
+}
+
+.tickerInner {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* 2. BRAND NAVBAR */
+.navbar {
+  background: #0a0a0a;
+  border-bottom: 2px solid #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+}
+
+.navContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brandLogoBox {
+  background: #ffffff;
+  color: #000000;
+  font-weight: 900;
+  font-size: 1.1rem;
+  padding: 4px 8px;
+  border: 2px solid #ffff00;
+}
+
+.brandTitle {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.brandSub {
+  font-size: 0.68rem;
+  color: #888888;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.navLink:hover {
+  background: #ffffff;
+  color: #000000;
+}
+
+.navActionBtn {
+  background: #ffff00;
+  color: #000000;
+  border: 2px solid #ffffff;
+  padding: 8px 16px;
+  font-size: 0.78rem;
+  font-family: inherit;
+  font-weight: 900;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+.navActionBtn:hover {
+  background: #ffffff;
+}
+
+/* 3. HERO SECTION */
+.heroSection {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  border-bottom: 2px solid #ffffff;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.kickerTag {
+  background: #ffffff;
+  color: #000000;
+  font-size: 0.72rem;
+  font-weight: 900;
+  padding: 4px 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.heroHeading {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+
+.heroLead {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.6;
+  margin: 0 0 24px;
+}
+
+.heroSpecBlock {
+  background: #111111;
+  border: 2px solid #ffffff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.heroSpecBlock h3 {
+  font-size: 1rem;
+  margin: 0;
+  color: #ffff00;
+  text-transform: uppercase;
+}
+
+.heroSpecRow {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #444444;
+  padding-bottom: 8px;
+  font-size: 0.8rem;
+}
+.heroSpecRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.heroSpecRow span:first-child {
+  color: #888888;
+}
+.heroSpecRow span:last-child {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* 4. SEARCH & COMMAND FILTER BAR */
+.filterSection {
+  background: #0a0a0a;
+  border-bottom: 2px solid #ffffff;
+  padding: 20px 24px;
+}
+
+.filterInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.filterBtns {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.termBtn {
+  background: #000000;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: all 0.15s;
+}
+.termBtn:hover {
+  background: #222222;
+}
+.termBtn.active {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* 5. INTERACTIVE MATERIAL SPEC INSPECTOR */
+.materialInspectorSection {
+  max-width: 1440px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.inspectorBox {
+  background: #0a0a0a;
+  border: 2px solid #ffffff;
+  padding: 28px;
+}
+
+.inspectorHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.inspectorHeader h3 {
+  font-size: 1.4rem;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffff00;
+}
+
+.materialSelectorRow {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.matSelectBtn {
+  background: #111111;
+  border: 1px solid #666666;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+.matSelectBtn.activeMat {
+  background: #ffff00;
+  color: #000000;
+  border-color: #ffff00;
+}
+
+.materialDetailCard {
+  background: #000000;
+  border: 1px solid #ffffff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.matTitle {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #ffffff;
+  margin: 0 0 8px;
+}
+
+.matDesc {
+  font-size: 0.85rem;
+  color: #aaaaaa;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.matStats {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.8rem;
+}
+
+/* 6. RAW REAL ESTATE PROPERTY GRID */
+.inventorySection {
+  max-width: 1440px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 12px;
+  margin: 0 0 32px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.card {
+  background: #0a0a0a;
+  border: 2px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease;
+}
+.card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 6px 6px 0px #ffffff;
+}
+
+.cardImageWrap {
+  position: relative;
+  height: 220px;
+  border-bottom: 2px solid #ffffff;
+  background: #1a1a1a;
+}
+
+.cardImg {
+  object-fit: cover;
+  filter: contrast(120%) grayscale(20%);
+}
+
+.cardStamps {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stampPrice {
+  background: #ffff00;
+  color: #000000;
+  font-weight: 900;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border: 1px solid #000000;
+}
+
+.stampBadge {
+  background: #000000;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+}
+
+.cardBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.cardMetaRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: #ffff00;
+  font-weight: 700;
+}
+
+.cardBody h3 {
+  font-size: 1.15rem;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.cardBody p {
+  font-size: 0.8rem;
+  color: #aaaaaa;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.specBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  border-top: 1px solid #333333;
+  padding-top: 12px;
+  font-size: 0.72rem;
+}
+
+.specBox div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.specBox span {
+  color: #666666;
+  font-size: 0.65rem;
+}
+.specBox strong {
+  color: #ffffff;
+}
+
+.actionBtn {
+  margin-top: auto;
+  background: #ffffff;
+  color: #000000;
+  border: none;
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 0.78rem;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background 0.15s;
+}
+.actionBtn:hover {
+  background: #ffff00;
+}
+
+/* 7. BRUTALIST MANIFESTO (4-COLUMN GRID) */
+.manifestoSection {
+  max-width: 1440px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+
+.manifestoGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.manifestoCard {
+  background: #0a0a0a;
+  border: 1px solid #444444;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.manifestoNum {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #ffff00;
+}
+
+.manifestoCard h4 {
+  font-size: 1.05rem;
+  margin: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.manifestoCard p {
+  font-size: 0.78rem;
+  color: #888888;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 8. PRIVATE ACQUISITION LEAD FORM */
+.leadSection {
+  background: #111111;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding: 56px 24px;
+}
+
+.leadInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.leadText h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  line-height: 1.15;
+}
+
+.leadText p {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.formBox {
+  background: #000000;
+  border: 2px solid #ffffff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px 12px;
+  background: #111111;
+  border: 1px solid #444444;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 0.82rem;
+  outline: none;
+}
+.formInput:focus {
+  border-color: #ffff00;
+}
+
+.submitBtn {
+  background: #ffff00;
+  color: #000000;
+  border: none;
+  font-family: inherit;
+  font-weight: 900;
+  font-size: 0.85rem;
+  padding: 12px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: background 0.15s;
+}
+.submitBtn:hover {
+  background: #ffffff;
+}
+
+/* 9. FOOTER */
+.footer {
+  background: #000000;
+  padding: 48px 24px 80px;
+  font-size: 0.74rem;
+  color: #666666;
+}
+
+.footerInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-bottom: 1px solid #222222;
+  padding-bottom: 24px;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 18px;
+}
+
+.footerLinks a {
+  color: #888888;
+  text-decoration: none;
+}
+.footerLinks a:hover {
+  color: #ffffff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .manifestoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .heroSection {
+    grid-template-columns: 1fr;
+  }
+  .materialDetailCard {
+    grid-template-columns: 1fr;
+  }
+  .leadInner {
+    grid-template-columns: 1fr;
+  }
+  .navLinks {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .manifestoGrid {
+    grid-template-columns: 1fr;
+  }
+}

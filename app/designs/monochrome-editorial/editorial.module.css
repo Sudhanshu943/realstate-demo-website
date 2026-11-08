@@ -1,0 +1,893 @@
+.editorialPage {
+  background-color: #f7f7f3;
+  color: #111111;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* ISSN Telemetry Top Ribbon */
+.issnBar {
+  border-bottom: 1px solid #111111;
+  padding: 10px clamp(20px, 4vw, 64px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.72rem;
+  font-family: "Courier New", Courier, monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #f7f7f3;
+  color: #444444;
+}
+
+.issnBar strong {
+  color: #d3472f;
+  font-weight: 700;
+}
+
+/* Journal Masthead */
+.masthead {
+  padding: 40px clamp(20px, 4vw, 64px) 24px;
+  border-bottom: 3px solid #111111;
+  text-align: center;
+}
+
+.journalCategory {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: #d3472f;
+  margin-bottom: 14px;
+  display: block;
+  font-weight: 700;
+}
+
+.journalTitle {
+  font-family: "Didot", "Bodoni MT", "Playfair Display", Georgia, serif;
+  font-size: clamp(3rem, 7.5vw, 6.8rem);
+  line-height: 0.88;
+  letter-spacing: -0.04em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 auto 20px;
+  max-width: 1200px;
+}
+
+.mastheadDetails {
+  border-top: 1px solid #111111;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #555555;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Navigation Bar */
+.journalNav {
+  border-bottom: 1px solid #111111;
+  padding: 14px clamp(20px, 4vw, 64px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f7f3;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  padding-right: 180px; /* Room for bottom-right or floating elements */
+}
+
+.navLinks {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLinks a {
+  color: #111111;
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: color 0.15s ease;
+}
+.navLinks a:hover {
+  color: #d3472f;
+}
+
+.modeToggle {
+  background: #111111;
+  color: #ffffff;
+  border: 1px solid #111111;
+  padding: 6px 14px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background 0.15s;
+}
+.modeToggle:hover {
+  background: #d3472f;
+  border-color: #d3472f;
+}
+
+/* Concept Explainer Bar */
+.conceptExplainer {
+  background: #111111;
+  color: #f7f7f3;
+  padding: 24px clamp(20px, 4vw, 64px);
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 32px;
+  align-items: center;
+  border-bottom: 1px solid #333333;
+}
+
+.explainerBadge {
+  font-family: "Courier New", Courier, monospace;
+  color: #d3472f;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.conceptExplainer h3 {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 4px 0 0;
+  color: #ffffff;
+}
+
+.explainerText {
+  font-size: 0.88rem;
+  line-height: 1.65;
+  color: #cccccc;
+  margin: 0;
+}
+
+/* Cover Story Section */
+.coverStory {
+  padding: 64px clamp(20px, 4vw, 64px);
+  border-bottom: 1px solid #111111;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.coverGrid {
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 56px;
+  align-items: flex-start;
+}
+
+.plateContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainPlateWrap {
+  position: relative;
+  height: 560px;
+  border: 1px solid #111111;
+  background: #e6e6e0;
+  overflow: hidden;
+}
+
+.plateImg {
+  object-fit: cover;
+  filter: contrast(105%) grayscale(10%);
+  transition: transform 0.6s ease;
+}
+
+.plateThumbStrip {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.plateThumb {
+  border: 1px solid #111111;
+  background: transparent;
+  padding: 8px 14px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.plateThumb.activePlate {
+  background: #111111;
+  color: #ffffff;
+}
+
+.plateCaption {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #d4d4cc;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.74rem;
+  color: #666666;
+}
+
+.narrativeCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.storyFolioNum {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: 3.5rem;
+  line-height: 1;
+  color: #d3472f;
+  margin-bottom: 12px;
+}
+
+.storyTitle {
+  font-family: "Didot", "Playfair Display", Georgia, serif;
+  font-size: clamp(2.2rem, 3.8vw, 3.4rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin: 0 0 24px;
+}
+
+.storyColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.dropCap::first-letter {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: 3.6rem;
+  float: left;
+  line-height: 0.8;
+  padding-right: 10px;
+  padding-top: 4px;
+  color: #d3472f;
+}
+
+.storyColumns p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: #2b2b2b;
+  margin: 0;
+  text-align: justify;
+}
+
+.pullQuote {
+  border-top: 2px solid #111111;
+  border-bottom: 1px solid #111111;
+  padding: 18px 0;
+  margin: 20px 0 24px;
+  font-family: "Didot", "Playfair Display", Georgia, serif;
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  color: #111111;
+}
+
+.particularsList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 24px;
+  border-top: 1px solid #111111;
+}
+
+.particularsList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px solid #e0e0d8;
+  font-size: 0.82rem;
+}
+
+.particularsList li span {
+  color: #666666;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+}
+
+.particularsList li strong {
+  font-weight: 700;
+  color: #111111;
+}
+
+.actionRow {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.dossierBtn {
+  background: #111111;
+  color: #f7f7f3;
+  border: 1px solid #111111;
+  padding: 14px 28px;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+.dossierBtn:hover {
+  background: #d3472f;
+  border-color: #d3472f;
+}
+
+.viewingLink {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #111111;
+  text-decoration: none;
+  border-bottom: 1px solid #111111;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+.viewingLink:hover {
+  color: #d3472f;
+  border-color: #d3472f;
+}
+
+/* Section 3: Essays & Dispatches */
+.essaysSection {
+  background: #ecece6;
+  padding: 72px clamp(20px, 4vw, 64px);
+  border-bottom: 1px solid #111111;
+}
+
+.sectionHeadingBlock {
+  max-width: 1360px;
+  margin: 0 auto 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid #111111;
+  padding-bottom: 16px;
+}
+
+.sectionKicker {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.72rem;
+  color: #d3472f;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.sectionHeadingBlock h2 {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-weight: 400;
+  margin: 0;
+  color: #111111;
+}
+
+.essaysGrid {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.essayCard {
+  background: #f7f7f3;
+  border: 1px solid #111111;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+}
+
+.essayNumber {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: 2.2rem;
+  color: #d3472f;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.essayCard h3 {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+  margin: 0 0 14px;
+  line-height: 1.25;
+}
+
+.essayCard p {
+  font-size: 0.88rem;
+  color: #444444;
+  line-height: 1.65;
+  margin: 0 0 20px;
+  flex: 1;
+}
+
+.essayAuthor {
+  border-top: 1px solid #d4d4cc;
+  padding-top: 12px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #666666;
+}
+
+/* Section 4: Full Curated Folio Catalogue */
+.folioSection {
+  padding: 72px clamp(20px, 4vw, 64px);
+  max-width: 1360px;
+  margin: 0 auto;
+  border-bottom: 1px solid #111111;
+}
+
+.folioGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.folioCard {
+  border: 1px solid #111111;
+  background: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.folioCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+}
+
+.folioCardImgWrap {
+  position: relative;
+  height: 260px;
+  border: 1px solid #e0e0d8;
+  margin-bottom: 16px;
+  overflow: hidden;
+  background: #e8e8e2;
+}
+
+.folioCardImg {
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.folioCard:hover .folioCardImg {
+  transform: scale(1.03);
+}
+
+.folioCardMeta {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.folioCardTop {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  font-family: "Courier New", Courier, monospace;
+  color: #d3472f;
+  margin-bottom: 6px;
+}
+
+.folioCardMeta h4 {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: 1.4rem;
+  margin: 0 0 6px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.folioPrice {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 8px;
+}
+
+.folioCardMeta p {
+  font-size: 0.85rem;
+  color: #444444;
+  line-height: 1.6;
+  margin: 0 0 18px;
+  flex: 1;
+}
+
+.folioCardSpecs {
+  display: flex;
+  gap: 16px;
+  font-size: 0.74rem;
+  color: #666666;
+  margin-bottom: 14px;
+}
+
+.folioCardAction {
+  border-top: 1px solid #111111;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: transparent;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  cursor: pointer;
+  color: #111111;
+}
+.folioCardAction:hover {
+  color: #d3472f;
+}
+
+/* Section 5: Editorial Principles Manifesto */
+.principlesSection {
+  background: #111111;
+  color: #f7f7f3;
+  padding: 80px clamp(20px, 4vw, 64px);
+  border-bottom: 1px solid #222222;
+}
+
+.principlesInner {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.principlesHeader {
+  margin-bottom: 48px;
+  max-width: 720px;
+}
+
+.principlesHeader h2 {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  font-weight: 400;
+  margin: 12px 0 0;
+  line-height: 1.1;
+}
+
+.principlesGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+.principleItem {
+  border-top: 1px solid #333333;
+  padding-top: 24px;
+}
+
+.principleNum {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  color: #d3472f;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.principleItem h4 {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin: 0 0 12px;
+  color: #ffffff;
+}
+
+.principleItem p {
+  font-size: 0.88rem;
+  color: #aaaaaa;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Section 6: Architectural Projects Preview */
+.projectsSection {
+  padding: 72px clamp(20px, 4vw, 64px);
+  max-width: 1360px;
+  margin: 0 auto;
+  border-bottom: 1px solid #111111;
+}
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+}
+
+.projectCard {
+  border: 1px solid #111111;
+  background: #ffffff;
+  padding: 24px;
+}
+
+.projectImgWrap {
+  position: relative;
+  height: 240px;
+  border: 1px solid #e0e0d8;
+  margin-bottom: 18px;
+}
+
+.projectCard h4 {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: 1.5rem;
+  margin: 0 0 6px;
+  font-weight: 400;
+}
+
+.projectCard span.location {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: #d3472f;
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.projectCard p {
+  font-size: 0.85rem;
+  color: #444444;
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+/* Section 7: Private Acquisition & Consultation Form */
+.enquirySection {
+  padding: 80px clamp(20px, 4vw, 64px);
+  background: #f1f0ea;
+  border-bottom: 1px solid #111111;
+}
+
+.enquiryInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 56px;
+}
+
+.enquiryIntro h2 {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+  font-weight: 400;
+  line-height: 1.05;
+  margin: 12px 0 20px;
+}
+
+.enquiryIntro p {
+  font-size: 0.95rem;
+  color: #444444;
+  line-height: 1.7;
+}
+
+.enquiryForm {
+  background: #ffffff;
+  border: 1px solid #111111;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formField label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  color: #555555;
+}
+
+.formField input, .formField select, .formField textarea {
+  border: 1px solid #111111;
+  background: #fcfcfb;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 0.88rem;
+  color: #111111;
+  border-radius: 0;
+  outline: none;
+}
+.formField input:focus, .formField textarea:focus {
+  border-color: #d3472f;
+}
+
+/* Colophon & Full Footer */
+.colophonFooter {
+  padding: 64px clamp(20px, 4vw, 64px) 40px;
+  background: #111111;
+  color: #f7f7f3;
+}
+
+.colophonGrid {
+  max-width: 1360px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 48px;
+  border-bottom: 1px solid #333333;
+  padding-bottom: 48px;
+}
+
+.colophonGrid h4 {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: 1.4rem;
+  margin: 0 0 16px;
+  color: #ffffff;
+}
+
+.colophonGrid h5 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d3472f;
+  margin: 0 0 16px;
+}
+
+.colophonGrid p {
+  color: #999999;
+  font-size: 0.85rem;
+  line-height: 1.65;
+  margin: 0;
+}
+
+.colophonGrid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.colophonGrid ul li a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 0.82rem;
+}
+.colophonGrid ul li a:hover {
+  color: #d3472f;
+}
+
+.colophonBottom {
+  max-width: 1360px;
+  margin: 24px auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.72rem;
+  color: #777777;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Modal / Slide-out Dossier Inspection Panel */
+.dossierOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 17, 17, 0.75);
+  backdrop-filter: blur(4px);
+  z-index: 10000;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dossierDrawer {
+  width: min(640px, 100%);
+  height: 100%;
+  background: #f7f7f3;
+  border-left: 2px solid #111111;
+  padding: 48px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-shadow: -10px 0 30px rgba(0,0,0,0.3);
+}
+
+.closeDrawerBtn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: transparent;
+  border: 1px solid #111111;
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+.closeDrawerBtn:hover {
+  background: #111111;
+  color: #ffffff;
+}
+
+.dossierHeader {
+  border-bottom: 2px solid #111111;
+  padding-bottom: 20px;
+  margin-bottom: 28px;
+}
+
+.dossierHeader span {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.72rem;
+  color: #d3472f;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+.dossierHeader h2 {
+  font-family: "Didot", "Playfair Display", serif;
+  font-size: 2.2rem;
+  margin: 6px 0 0;
+  font-weight: 400;
+}
+
+.dossierTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 32px;
+  font-size: 0.85rem;
+}
+
+.dossierTable td {
+  padding: 12px 0;
+  border-bottom: 1px solid #d4d4cc;
+}
+.dossierTable td:first-child {
+  color: #666666;
+  width: 45%;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+}
+.dossierTable td:last-child {
+  font-weight: 700;
+  color: #111111;
+}
+
+@media (max-width: 1050px) {
+  .coverGrid { grid-template-columns: 1fr; }
+  .essaysGrid { grid-template-columns: 1fr; }
+  .folioGrid { grid-template-columns: 1fr 1fr; }
+  .principlesGrid { grid-template-columns: 1fr 1fr; }
+  .projectsGrid { grid-template-columns: 1fr; }
+  .enquiryInner { grid-template-columns: 1fr; }
+  .colophonGrid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 768px) {
+  .journalNav { padding-right: 24px; }
+  .navLinks { display: none; }
+  .storyColumns { grid-template-columns: 1fr; }
+  .folioGrid { grid-template-columns: 1fr; }
+  .principlesGrid { grid-template-columns: 1fr; }
+  .colophonGrid { grid-template-columns: 1fr; }
+}

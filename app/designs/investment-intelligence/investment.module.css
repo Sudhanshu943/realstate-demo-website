@@ -1,0 +1,677 @@
+.investPage {
+  background-color: #0c1412;
+  color: #e2ede8;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Inter", sans-serif;
+  line-height: 1.5;
+}
+
+/* 1. FINANCIAL TICKER BAR */
+.tickerBar {
+  background: #080d0c;
+  border-bottom: 1px solid #1a2a26;
+  padding: 8px 24px;
+  font-size: 0.72rem;
+  font-family: "SF Mono", Monaco, Consolas, monospace;
+  color: #79998e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.tickerInner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.tickerPill {
+  color: #57d3a2;
+  font-weight: 700;
+}
+
+/* 2. BRAND NAVBAR */
+.navbar {
+  background: #0e1916;
+  border-bottom: 1px solid #1a2a26;
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.navContainer {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.brandGroup {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brandLogoBox {
+  width: 38px;
+  height: 38px;
+  background: #153229;
+  border: 1px solid #57d3a2;
+  color: #57d3a2;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 1.1rem;
+}
+
+.brandTitle {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.01em;
+}
+
+.brandSub {
+  font-size: 0.7rem;
+  color: #79998e;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #a1b8b0;
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: color 0.15s ease;
+}
+.navLink:hover {
+  color: #57d3a2;
+}
+
+.pipelineBtn {
+  background: #57d3a2;
+  color: #0c1412;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+.pipelineBtn:hover {
+  background: #45b88c;
+}
+
+/* 3. HERO MACRO HEADER */
+.heroHeader {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 48px 24px 32px;
+}
+
+.kicker {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #57d3a2;
+  font-weight: 800;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.heroHeading {
+  font-size: clamp(2.2rem, 4.5vw, 3.6rem);
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 14px;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.heroSub {
+  font-size: 1rem;
+  color: #a1b8b0;
+  max-width: 780px;
+  line-height: 1.6;
+  margin: 0 0 32px;
+}
+
+/* KPI STRIP */
+.kpiStrip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.kpiBox {
+  background: #111d1a;
+  border: 1px solid #1f332d;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.kpiBox span {
+  font-size: 0.75rem;
+  color: #79998e;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.kpiBox strong {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #57d3a2;
+  letter-spacing: -0.02em;
+}
+
+.kpiBox small {
+  font-size: 0.72rem;
+  color: #557067;
+}
+
+/* 4. DYNAMIC YIELD & CASH FLOW MODELER */
+.calcSection {
+  max-width: 1440px;
+  margin: 32px auto 48px;
+  padding: 0 24px;
+}
+
+.calcBox {
+  background: #111d1a;
+  border: 1px solid #1f332d;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.calcHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid #1f332d;
+  padding-bottom: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.calcHeader h2 {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+.calcGrid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.sliderGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.sliderItem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sliderLabelRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.82rem;
+}
+.sliderLabelRow span {
+  color: #a1b8b0;
+}
+.sliderLabelRow strong {
+  color: #57d3a2;
+  font-weight: 700;
+}
+
+.rangeInput {
+  width: 100%;
+  accent-color: #57d3a2;
+  cursor: pointer;
+}
+
+.calcResults {
+  background: #0c1412;
+  border: 1px solid #1f332d;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.resultRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px dashed #1f332d;
+  padding-bottom: 8px;
+  font-size: 0.85rem;
+}
+.resultRow:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.resultRow span {
+  color: #a1b8b0;
+}
+.resultRow strong {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #57d3a2;
+}
+
+/* 5. ASSET COMPARISON MATRIX TABLE */
+.tableSection {
+  max-width: 1440px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.tableWrap {
+  overflow-x: auto;
+  background: #111d1a;
+  border: 1px solid #1f332d;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.matrixTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  text-align: left;
+}
+
+.matrixTable th {
+  background: #0e1916;
+  color: #79998e;
+  padding: 14px 16px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #1f332d;
+}
+
+.matrixTable td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #172421;
+  color: #c9dad4;
+}
+
+.matrixTable tr:hover td {
+  background: rgba(87, 211, 162, 0.04);
+}
+
+.memoBtn {
+  background: transparent;
+  border: 1px solid #57d3a2;
+  color: #57d3a2;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.memoBtn:hover {
+  background: #57d3a2;
+  color: #0c1412;
+}
+
+/* 6. PORTFOLIO ASSET SHOWCASE (3-COLUMN GRID) */
+.portfolioSection {
+  max-width: 1440px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+
+.sectionHeader {
+  margin-bottom: 28px;
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 6px;
+}
+
+.sectionSubtext {
+  font-size: 0.9rem;
+  color: #79998e;
+  margin: 0;
+}
+
+.portfolioGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.assetCard {
+  background: #111d1a;
+  border: 1px solid #1f332d;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.assetCard:hover {
+  transform: translateY(-3px);
+  border-color: #57d3a2;
+}
+
+.assetImgWrap {
+  position: relative;
+  height: 200px;
+  background: #080d0c;
+}
+
+.assetImg {
+  object-fit: cover;
+}
+
+.yieldBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #57d3a2;
+  color: #0c1412;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.assetBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.assetLocality {
+  font-size: 0.72rem;
+  color: #57d3a2;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.assetTitle {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+.assetDesc {
+  font-size: 0.8rem;
+  color: #8faaa1;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.assetMetricsRow {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #172421;
+  padding-top: 10px;
+  font-size: 0.75rem;
+  color: #a1b8b0;
+}
+
+.assetFooterRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #172421;
+  padding-top: 12px;
+  margin-top: auto;
+}
+
+.assetPrice {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.assetCta {
+  background: #172b24;
+  color: #57d3a2;
+  border: 1px solid #57d3a2;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
+.assetCta:hover {
+  background: #57d3a2;
+  color: #0c1412;
+}
+
+/* 7. CAPITAL PRESERVATION PILLARS (4-COLUMN GRID) */
+.pillarsSection {
+  max-width: 1440px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.pillarCard {
+  background: #111d1a;
+  border: 1px solid #1f332d;
+  border-radius: 8px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pillarIcon {
+  font-size: 1.8rem;
+}
+
+.pillarTitle {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+.pillarText {
+  font-size: 0.8rem;
+  color: #8faaa1;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 8. HNW & FAMILY OFFICE CONSULTATION */
+.leadSection {
+  background: #0e1916;
+  border-top: 1px solid #1f332d;
+  border-bottom: 1px solid #1f332d;
+  padding: 56px 24px;
+}
+
+.leadInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.leadText h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 14px;
+  line-height: 1.2;
+}
+
+.leadText p {
+  font-size: 0.92rem;
+  color: #a1b8b0;
+  line-height: 1.6;
+  margin: 0 0 20px;
+}
+
+.formBox {
+  background: #111d1a;
+  border: 1px solid #1f332d;
+  border-radius: 10px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.formInput {
+  width: 100%;
+  padding: 10px 12px;
+  background: #0c1412;
+  border: 1px solid #1f332d;
+  color: #ffffff;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  outline: none;
+}
+.formInput:focus {
+  border-color: #57d3a2;
+}
+
+.formSubmitBtn {
+  background: #57d3a2;
+  color: #0c1412;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 0.9rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.formSubmitBtn:hover {
+  background: #45b88c;
+}
+
+/* 9. FOOTER */
+.footer {
+  background: #080d0c;
+  padding: 48px 24px 80px;
+  font-size: 0.75rem;
+  color: #557067;
+  border-top: 1px solid #152420;
+}
+
+.footerInner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footerTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-bottom: 1px solid #121f1b;
+  padding-bottom: 24px;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 20px;
+}
+
+.footerLinks a {
+  color: #79998e;
+  text-decoration: none;
+}
+.footerLinks a:hover {
+  color: #57d3a2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1100px) {
+  .kpiStrip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolioGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .pillarsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .calcGrid {
+    grid-template-columns: 1fr;
+  }
+  .leadInner {
+    grid-template-columns: 1fr;
+  }
+  .navLinks {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .kpiStrip {
+    grid-template-columns: 1fr;
+  }
+  .portfolioGrid {
+    grid-template-columns: 1fr;
+  }
+  .pillarsGrid {
+    grid-template-columns: 1fr;
+  }
+}
